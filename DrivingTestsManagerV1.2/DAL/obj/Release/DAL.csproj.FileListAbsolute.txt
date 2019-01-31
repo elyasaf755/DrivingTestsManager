@@ -9,3 +9,14 @@ C:\Users\Elyasaf\Documents\Visual Studio 2017 Projects\C#Projects\DrivingTestsMa
 C:\Users\Elyasaf\Documents\Visual Studio 2017 Projects\C#Projects\DrivingTestsManagerV1.2\DAL\obj\Release\DAL.csproj.CopyComplete
 C:\Users\Elyasaf\Documents\Visual Studio 2017 Projects\C#Projects\DrivingTestsManagerV1.2\DAL\obj\Release\DAL.dll
 C:\Users\Elyasaf\Documents\Visual Studio 2017 Projects\C#Projects\DrivingTestsManagerV1.2\DAL\obj\Release\DAL.pdb
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DAL\bin\Release\DAL.dll
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DAL\bin\Release\DAL.pdb
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DAL\bin\Release\BE.dll
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DAL\bin\Release\DATA.dll
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DAL\bin\Release\BE.pdb
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DAL\bin\Release\DATA.pdb
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DAL\obj\Release\DAL.csprojAssemblyReference.cache
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DAL\obj\Release\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DAL\obj\Release\DAL.csproj.CopyComplete
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DAL\obj\Release\DAL.dll
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DAL\obj\Release\DAL.pdb

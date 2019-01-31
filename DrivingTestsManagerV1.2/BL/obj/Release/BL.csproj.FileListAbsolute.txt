@@ -27,3 +27,32 @@ C:\Users\Elyasaf\Documents\Visual Studio 2017 Projects\C#Projects\DrivingTestsMa
 C:\Users\Elyasaf\Documents\Visual Studio 2017 Projects\C#Projects\DrivingTestsManagerV1.2\BL\obj\Release\BL.csproj.CopyComplete
 C:\Users\Elyasaf\Documents\Visual Studio 2017 Projects\C#Projects\DrivingTestsManagerV1.2\BL\obj\Release\BL.dll
 C:\Users\Elyasaf\Documents\Visual Studio 2017 Projects\C#Projects\DrivingTestsManagerV1.2\BL\obj\Release\BL.pdb
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\BL\bin\Release\BL.dll.config
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\BL\bin\Release\BL.dll
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\BL\bin\Release\BL.pdb
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\BL\bin\Release\BE.dll
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\BL\bin\Release\DAL.dll
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\BL\bin\Release\EntityFramework.dll
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\BL\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\BL\bin\Release\GMap.NET.Core.dll
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\BL\bin\Release\GMap.NET.WindowsForms.dll
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\BL\bin\Release\GMap.NET.WindowsPresentation.dll
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\BL\bin\Release\Newtonsoft.Json.dll
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\BL\bin\Release\System.Data.SQLite.dll
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\BL\bin\Release\System.Data.SQLite.EF6.dll
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\BL\bin\Release\System.Data.SQLite.Linq.dll
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\BL\bin\Release\DATA.dll
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\BL\bin\Release\BE.pdb
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\BL\bin\Release\DAL.pdb
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\BL\bin\Release\EntityFramework.xml
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\BL\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\BL\bin\Release\Newtonsoft.Json.pdb
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\BL\bin\Release\Newtonsoft.Json.xml
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\BL\bin\Release\System.Data.SQLite.xml
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\BL\bin\Release\System.Data.SQLite.dll.config
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\BL\bin\Release\DATA.pdb
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\BL\obj\Release\BL.csprojAssemblyReference.cache
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\BL\obj\Release\BL.csproj.CoreCompileInputs.cache
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\BL\obj\Release\BL.csproj.CopyComplete
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\BL\obj\Release\BL.dll
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\BL\obj\Release\BL.pdb

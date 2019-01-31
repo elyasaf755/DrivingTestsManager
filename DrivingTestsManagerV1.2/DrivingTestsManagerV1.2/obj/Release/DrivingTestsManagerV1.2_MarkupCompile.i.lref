@@ -1,23 +1,23 @@
-﻿C:\Users\Elyasaf\Documents\Visual Studio 2017 Projects\C#Projects\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\obj\Release\GeneratedInternalTypeHelper.g.i.cs
-FC:\Users\Elyasaf\Documents\Visual Studio 2017 Projects\C#Projects\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\App.xaml;;
-FC:\Users\Elyasaf\Documents\Visual Studio 2017 Projects\C#Projects\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\Main Menu\Home Menu\LoginWin.xaml;;
-FC:\Users\Elyasaf\Documents\Visual Studio 2017 Projects\C#Projects\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\Main Menu\Test Menu\AddTestResultsWin.xaml;;
-FC:\Users\Elyasaf\Documents\Visual Studio 2017 Projects\C#Projects\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\Main Menu\Test Menu\AddTestVerificationWin.xaml;;
-FC:\Users\Elyasaf\Documents\Visual Studio 2017 Projects\C#Projects\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\Main Menu\Test Menu\PotentialTestersView.xaml;;
-FC:\Users\Elyasaf\Documents\Visual Studio 2017 Projects\C#Projects\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\Main Menu\Test Menu\TestEditPage.xaml;;
-FC:\Users\Elyasaf\Documents\Visual Studio 2017 Projects\C#Projects\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\Main Menu\Test Menu\TestViewPage.xaml;;
-FC:\Users\Elyasaf\Documents\Visual Studio 2017 Projects\C#Projects\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\Main Menu\Tester Menu\TesterAddPage.xaml;;
-FC:\Users\Elyasaf\Documents\Visual Studio 2017 Projects\C#Projects\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\Main Menu\Tester Menu\TesterEditPage.xaml;;
-FC:\Users\Elyasaf\Documents\Visual Studio 2017 Projects\C#Projects\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\Main Menu\Home Menu\ShowAllTestersPage.xaml;;
-FC:\Users\Elyasaf\Documents\Visual Studio 2017 Projects\C#Projects\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\Main Menu\Trainee Menu\TraineeAddPage.xaml;;
-FC:\Users\Elyasaf\Documents\Visual Studio 2017 Projects\C#Projects\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\Main Menu\Trainee Menu\TraineeEditPage.xaml;;
-FC:\Users\Elyasaf\Documents\Visual Studio 2017 Projects\C#Projects\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\MainWindow.xaml;;
-FC:\Users\Elyasaf\Documents\Visual Studio 2017 Projects\C#Projects\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\SettingsWin.xaml;;
-FC:\Users\Elyasaf\Documents\Visual Studio 2017 Projects\C#Projects\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\User Controls\CircleValidator.xaml;;
-FC:\Users\Elyasaf\Documents\Visual Studio 2017 Projects\C#Projects\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\User Controls\HinttableComboBox.xaml;;
-FC:\Users\Elyasaf\Documents\Visual Studio 2017 Projects\C#Projects\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\User Controls\HinttableDatePicker.xaml;;
-FC:\Users\Elyasaf\Documents\Visual Studio 2017 Projects\C#Projects\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\User Controls\HinttableTextBox.xaml;;
-FC:\Users\Elyasaf\Documents\Visual Studio 2017 Projects\C#Projects\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\User Controls\WorkTimeControl.xaml;;
-FC:\Users\Elyasaf\Documents\Visual Studio 2017 Projects\C#Projects\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\User Controls\WorkTimeTable.xaml;;
-FC:\Users\Elyasaf\Documents\Visual Studio 2017 Projects\C#Projects\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\User Controls\WorkTimeWindow.xaml;;
+﻿C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\obj\Release\GeneratedInternalTypeHelper.g.i.cs
+FC:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\App.xaml;;
+FC:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\Main Menu\Home Menu\LoginWin.xaml;;
+FC:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\Main Menu\Test Menu\AddTestResultsWin.xaml;;
+FC:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\Main Menu\Test Menu\AddTestVerificationWin.xaml;;
+FC:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\Main Menu\Test Menu\PotentialTestersView.xaml;;
+FC:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\Main Menu\Test Menu\TestEditPage.xaml;;
+FC:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\Main Menu\Test Menu\TestViewPage.xaml;;
+FC:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\Main Menu\Tester Menu\TesterAddPage.xaml;;
+FC:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\Main Menu\Tester Menu\TesterEditPage.xaml;;
+FC:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\Main Menu\Home Menu\ShowAllTestersPage.xaml;;
+FC:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\Main Menu\Trainee Menu\TraineeAddPage.xaml;;
+FC:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\Main Menu\Trainee Menu\TraineeEditPage.xaml;;
+FC:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\MainWindow.xaml;;
+FC:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\SettingsWin.xaml;;
+FC:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\User Controls\CircleValidator.xaml;;
+FC:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\User Controls\HinttableComboBox.xaml;;
+FC:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\User Controls\HinttableDatePicker.xaml;;
+FC:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\User Controls\HinttableTextBox.xaml;;
+FC:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\User Controls\WorkTimeControl.xaml;;
+FC:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\User Controls\WorkTimeTable.xaml;;
+FC:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\User Controls\WorkTimeWindow.xaml;;
 
