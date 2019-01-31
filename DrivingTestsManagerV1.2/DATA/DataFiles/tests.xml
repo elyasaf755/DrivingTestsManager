@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Tests>
+  <Test>
+    <TestId>1</TestId>
+    <TesterId>308478098</TesterId>
+    <TraineeId>308116664</TraineeId>
+    <TestDateAndTime>2019-01-30T09:00:00</TestDateAndTime>
+    <TestLocation>ירושלים, הרב קוק</TestLocation>
+    <IsPassed>false</IsPassed>
+    <TesterNotes>גדשגשדג
+</TesterNotes>
+    <CarType>Private</CarType>
+    <DrivingSchool>ירושלים,     אור ירוק, None|None|None|None|None</DrivingSchool>
+    <DMV>אור יהודה</DMV>
+  </Test>
+  <Test>
+    <TestId>2</TestId>
+    <TesterId>308478098</TesterId>
+    <TraineeId>208116665</TraineeId>
+    <TestDateAndTime>2019-01-31T09:00:00</TestDateAndTime>
+    <TestLocation>ירושלים, א זוהור</TestLocation>
+    <IsPassed>true</IsPassed>
+    <TesterNotes>כעעככגעגגכ
+</TesterNotes>
+    <CarType>Private</CarType>
+    <DrivingSchool>ירושלים,   אור ירוק, None|None|None|None|None</DrivingSchool>
+    <DMV>אשדוד</DMV>
+  </Test>
+</Tests>

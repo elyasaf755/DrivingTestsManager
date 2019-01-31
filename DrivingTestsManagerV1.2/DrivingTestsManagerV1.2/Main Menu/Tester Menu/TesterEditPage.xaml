@@ -1,0 +1,165 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DrivingTestsManagerV1._2.Main_Menu.Tester_Menu"
+      xmlns:User_Controls="clr-namespace:DrivingTestsManagerV1._2.User_Controls" xmlns:BE="clr-namespace:BE;assembly=BE" x:Class="DrivingTestsManagerV1._2.Main_Menu.Trainee_Menu.TesterEditPage"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      mc:Ignorable="d" 
+      d:DesignHeight="540" d:DesignWidth="1020"
+      Title="TesterEditPage" x:Name="MyTesterEditPage" Loaded="MyTesterEditPage_Loaded">
+
+    <Page.Resources>
+        <CollectionViewSource x:Key="testerViewSource" d:DesignSource="{d:DesignInstance {x:Type BE:Tester}, CreateList=True}"/>
+    </Page.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="800*"/>
+            <ColumnDefinition Width="220*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0" DataContext="{Binding ElementName=MyTesterEditPage, Path=.}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <DataGrid x:Name="testerDataGrid" IsReadOnly="True" Width="800" RowDetailsVisibilityMode="VisibleWhenSelected"
+                      ItemsSource="{Binding TestersCollection}" EnableRowVirtualization="True" AutoGenerateColumns="False" Sorting="TesterDataGrid_Sorting" >
+
+                <DataGrid.GroupStyle>
+                    <GroupStyle>
+                        <GroupStyle.HeaderTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="{Binding Path=Name}"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </GroupStyle.HeaderTemplate>
+                        <GroupStyle.ContainerStyle>
+                            <Style TargetType="{x:Type GroupItem}">
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="{x:Type GroupItem}">
+                                            <Expander>
+                                                <Expander.Header>
+                                                    <StackPanel Orientation="Horizontal">
+                                                        <StackPanel Orientation="Horizontal" Margin="0, 0, 0, 0">
+                                                            <materialDesign:PackIcon Kind="ArrowDown"/>
+                                                            <TextBlock Text="{Binding Path=Name}" Margin="0, 0, 10 , 0"/>
+                                                            <TextBlock Text="("/>
+                                                            <TextBlock Text="{Binding Path=ItemCount}" Margin="0,0,3,0"/>
+                                                            <TextBlock Text="Trainees)"/>
+                                                        </StackPanel>
+                                                        <StackPanel Orientation="Horizontal" Margin="250, 0, 0, 0">
+                                                            <materialDesign:PackIcon Kind="ArrowDown"/>
+                                                            <TextBlock Text="{Binding Path=Name}" Margin="0, 0, 10 , 0"/>
+                                                            <TextBlock Text="("/>
+                                                            <TextBlock Text="{Binding Path=ItemCount}" Margin="0,0,3,0"/>
+                                                            <TextBlock Text="Trainees)"/>
+                                                        </StackPanel>
+                                                        <StackPanel Orientation="Horizontal" Margin="250, 0, 0, 0">
+                                                            <materialDesign:PackIcon Kind="ArrowDown"/>
+                                                            <TextBlock Text="{Binding Path=Name}" Margin="0, 0, 10 , 0"/>
+                                                            <TextBlock Text="("/>
+                                                            <TextBlock Text="{Binding Path=ItemCount}" Margin="0,0,3,0"/>
+                                                            <TextBlock Text="Trainees)"/>
+                                                        </StackPanel>
+                                                        <StackPanel Orientation="Horizontal" Margin="250, 0, 0, 0">
+                                                            <materialDesign:PackIcon Kind="ArrowDown"/>
+                                                            <TextBlock Text="{Binding Path=Name}" Margin="0, 0, 10 , 0"/>
+                                                            <TextBlock Text="("/>
+                                                            <TextBlock Text="{Binding Path=ItemCount}" Margin="0,0,3,0"/>
+                                                            <TextBlock Text="Trainees)"/>
+                                                        </StackPanel>
+                                                        <StackPanel Orientation="Horizontal" Margin="250, 0, 0, 0">
+                                                            <materialDesign:PackIcon Kind="ArrowDown"/>
+                                                            <TextBlock Text="{Binding Path=Name}" Margin="0, 0, 10 , 0"/>
+                                                            <TextBlock Text="("/>
+                                                            <TextBlock Text="{Binding Path=ItemCount}" Margin="0,0,3,0"/>
+                                                            <TextBlock Text="Trainees)"/>
+                                                        </StackPanel>
+                                                    </StackPanel>
+                                                </Expander.Header>
+                                                <ItemsPresenter/>
+                                            </Expander>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </GroupStyle.ContainerStyle>
+                    </GroupStyle>
+                </DataGrid.GroupStyle>
+
+                <!--CONTEXT MENU-->
+                <DataGrid.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem x:Name="WorkTimeCmi" Header="Show Work Time" Click="WorkTimeCmi_Click">
+                            <MenuItem.Icon>
+                                <materialDesign:PackIcon Kind="Show"/>
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <Separator/>
+                        <MenuItem x:Name="AddCmi" Header="Add a New Tester" Click="AddCmi_Clicked">
+                            <MenuItem.Icon>
+                                <materialDesign:PackIcon Kind="Plus"/>
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem x:Name="EditCmi" Header="Edit" Click="EditCmi_Clicked">
+                            <MenuItem.Icon>
+                                <materialDesign:PackIcon Kind="Edit"/>
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem x:Name="RemoveCmi" Header="Remove" Click="RemoveCmi_Clicked">
+                            <MenuItem.Icon>
+                                <materialDesign:PackIcon Kind="Trash"/>
+                            </MenuItem.Icon>
+                        </MenuItem>
+                    </ContextMenu>
+                </DataGrid.ContextMenu>
+
+                <DataGrid.Columns>
+                    <DataGridTextColumn x:Name="idColumn" Width="SizeToCells" Header="Id" Binding="{Binding Id}"/>
+                    <DataGridTextColumn x:Name="firstNameColumn" Width="SizeToHeader" Header="First Name" Binding="{Binding FirstName}"/>
+                    <DataGridTextColumn x:Name="lastNameColumn" Width="SizeToHeader" Header="Last Name" Binding="{Binding LastName}"/>
+                    <DataGridTextColumn x:Name="genderColumn" Width="SizeToHeader" Header="Gender" Binding="{Binding Gender}"/>
+                    <DataGridTextColumn x:Name="dateOfBirthColumn" Width="SizeToHeader" Header="Date Of Birth" Binding="{Binding DateOfBirthStringFormat}"  IsReadOnly="True"/>
+                    <DataGridTextColumn x:Name="ageColumn" Width="SizeToHeader" Header="Age" Binding="{Binding Age}"/>
+                    <DataGridTextColumn x:Name="addressColumn" Width="SizeToCells" Header="Address" Binding="{Binding AddressStringFormat}"/>
+                    <DataGridTextColumn x:Name="phoneNumberColumn" Width="SizeToHeader" Header="Phone Number" Binding="{Binding PhoneNumber}"/>
+                    <DataGridTextColumn x:Name="emailAddressColumn" Width="SizeToCells" Header="Email Address" Binding="{Binding EmailAddress}"/>
+                    <DataGridTextColumn x:Name="carTypeColumn" Width="SizeToHeader" Header="Car Type" Binding="{Binding CarType}"/>
+                    <DataGridTextColumn x:Name="maximalDistanceColumn" Width="SizeToHeader" Header="Max. Dist." Binding="{Binding MaximalDistance}"/>
+                    <DataGridTextColumn x:Name="weeklyTestsCountColumn" Width="SizeToHeader" Header="Weekly Tests" Binding="{Binding WeeklyTestsCount}"/>
+                    <DataGridTextColumn x:Name="maximalWeeklyTestsColumn" Width="SizeToHeader" Header="Max. Weekly Tests" Binding="{Binding MaximalWeeklyTests}"/>
+                    <DataGridTextColumn x:Name="yearsOfExperienceColumn" Width="SizeToHeader" Header="Exp. (Years)" Binding="{Binding YearsOfExperience}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Column="1">
+            <Grid x:Name="FilterGrid" Grid.Column="1" Background="White" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <Label Content="Filter By:" FontSize="14" FontWeight="Bold" Height="30" Width="140" Margin="36,10,42,498" HorizontalAlignment="Center" HorizontalContentAlignment="Center"/>
+                <User_Controls:HinttableTextBox x:Name="IdFilter" Hint="Id" IsValidatorVisible="False" Margin="10,45,118,464" TextChanged="TextChanged"/>
+                <User_Controls:HinttableTextBox x:Name="firstNameFilter" Hint="First Name" IsValidatorVisible="False" Margin="10,79,118,429" TextChanged="TextChanged"/>
+                <User_Controls:HinttableTextBox x:Name="lastNameFilter" Hint="Last Name" Height="auto" IsValidatorVisible="False" Margin="100,79,28,429" TextChanged="TextChanged"/>
+                <User_Controls:HinttableComboBox x:Name="genderFilter" Hint="Gender" Height="auto" Margin="10,114,118,394" IsValidatorVisible="False" SelectionChanged="SelectionChanged"/>
+                <User_Controls:HinttableTextBox x:Name="ageFilter" Hint="Age" Height="auto" IsValidatorVisible="False" Margin="100,114,73,394" TextChanged="TextChanged"/>
+                <User_Controls:HinttableTextBox x:Name="dayFilter" Hint="Day" MaxLengeth="2" Height="auto" IsValidatorVisible="False" Margin="10,149,158,359" TextChanged="TextChanged"/>
+                <Label Content="/" Height="30" Margin="52,149,151,359"/>
+                <User_Controls:HinttableTextBox x:Name="monthFilter" Hint="Month" MaxLengeth="2" Height="auto" IsValidatorVisible="False" Margin="66,149,97,359" TextChanged="TextChanged"/>
+                <Label Content="/" Height="30" Margin="113,150,90,358"/>
+                <User_Controls:HinttableTextBox x:Name="yearFilter" Hint="Year" MaxLengeth="4" Height="auto" IsValidatorVisible="False" Margin="132,149,16,359" TextChanged="TextChanged"/>
+                <User_Controls:HinttableTextBox x:Name="cityFilter" Hint="City" Height="auto" IsValidatorVisible="False" Margin="10,184,118,324" TextChanged="TextChanged"/>
+                <User_Controls:HinttableTextBox x:Name="streetFilter" Hint="Street" Height="auto" IsValidatorVisible="False" Margin="86,184,42,324" TextChanged="TextChanged"/>
+                <User_Controls:HinttableTextBox x:Name="buildingFilter" Hint="Building" Height="auto" IsValidatorVisible="False" Margin="162,184,-10,324" TextChanged="TextChanged"/>
+                <User_Controls:HinttableComboBox x:Name="carTypeFilter" Hint="Car Type" Height="auto" Margin="10,219,118,289" IsValidatorVisible="False" SelectionChanged="SelectionChanged"/>
+                <User_Controls:HinttableTextBox x:Name="emailAddressFilter" Hint="Email Address" Height="auto" Width="180" IsValidatorVisible="False" Margin="10,254,28,254" TextChanged="TextChanged"/>
+                <User_Controls:HinttableTextBox x:Name="phoneNumberFilter" Hint="Phone Number" Height="auto" Width="180" IsValidatorVisible="False" Margin="10,289,28,219" TextChanged="TextChanged"/>
+                <User_Controls:HinttableTextBox x:Name="maxDistFilter" Hint="Max. Distance" Height="auto" IsValidatorVisible="False" Margin="10,324,103,184" TextChanged="TextChanged"/>
+                <User_Controls:HinttableTextBox x:Name="experienceFilter" Hint="Experience" Height="auto" IsValidatorVisible="False" Margin="103,324,10,184" TextChanged="TextChanged"/>
+                <User_Controls:HinttableTextBox x:Name="weeklyTestsCountFilter" Hint="# Weekly Tests" Height="auto" IsValidatorVisible="False" Margin="10,359,98,149" TextChanged="TextChanged"/>
+                <User_Controls:HinttableTextBox x:Name="maxWeeklyTestsFilter" Hint="Max. Weekly Tests" Height="auto" IsValidatorVisible="False" Margin="103,359,-15,149" TextChanged="TextChanged"/>
+                <CheckBox x:Name="IsGroupingEnabledCheckBox" Content="Enable Groups" Height="30" Margin="10,394,108,114" Checked="IsGroupingEnabledCheckBox_Checked" Unchecked="IsGroupingEnabledCheckBox_Unchecked"/>
+                <Button x:Name="ClearFiltersButton" Content="Clear Filters" Margin="0,498,0,0" Click="ClearFiltersButton_Click" Height="Auto"/>
+            </Grid>
+        </Border>
+    </Grid>
+</Page>

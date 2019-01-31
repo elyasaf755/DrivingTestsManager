@@ -1,0 +1,49 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DrivingTestsManagerV1._2.Main_Menu.Tester_Menu"
+      xmlns:User_Controls="clr-namespace:DrivingTestsManagerV1._2.User_Controls" x:Class="DrivingTestsManagerV1._2.Main_Menu.Tester_Menu.TesterAddPage"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"  
+      xmlns:wpfTool="clr-namespace:Xceed.Wpf.Toolkit;assembly=Xceed.Wpf.Toolkit"
+      xmlns:xctk ="http://schemas.xceed.com/wpf/xaml/toolkit"
+      xmlns:System="clr-namespace:System;assembly=mscorlib"
+      mc:Ignorable="d" 
+      d:DesignHeight="540" d:DesignWidth="1020"
+      Title="TesterAddPage" Loaded="Page_Loaded" x:Name="MyTesterAddPage">
+
+    <Border BorderBrush="#FF00AEFF" BorderThickness="2">
+        <Grid x:Name="TesterAddPageMainGrid" Background="White" MouseLeftButtonDown="TesterAddPageMainGrid_MouseLeftButtonDown">
+            <User_Controls:HinttableTextBox    x:Name="IdTb"        Hint="Id"         HorizontalAlignment="Left" Height="auto" Width="170" Margin="60,50,0,0" VerticalAlignment="Top" TextChanged="IdTb_TextChanged"/>
+            <User_Controls:HinttableTextBox    x:Name="FirstNameTb" Hint="First Name" HorizontalAlignment="Left" Height="auto" Width="170" Margin="300,50,0,0"  VerticalAlignment="Top" TextChanged="FirstNameTb_TextChanged"/>
+            <User_Controls:HinttableTextBox    x:Name="LastNameTb"  Hint="Last Name"  HorizontalAlignment="Left" Height="auto" Width="170" Margin="540,50,0,0" VerticalAlignment="Top" TextChanged="LastNameTb_TextChanged"/>
+            <User_Controls:HinttableDatePicker x:Name="BirthDateDp" Hint="Date Of Birth" HorizontalAlignment="Left" Height="auto" Margin="780,50,0,0" VerticalAlignment="Top" Width="170" SelectedDateChanged="BirthDateDp_SelectedDateChanged"/>
+            <User_Controls:HinttableComboBox   x:Name="GenderCb" Hint="Gender" HorizontalAlignment="Left" Height="auto" Width="170" Margin="60,135,0,0" VerticalAlignment="Top" SelectionChanged="GenderCb_SelectionChanged"/>
+            <User_Controls:HinttableComboBox   x:Name="CityCb" Hint="City" Height="auto" Width="170" Margin="300,135,546,371" SelectionChanged="CityCb_SelectionChanged" PreviewMouseLeftButtonDown="CityCb_PreviewMouseLeftButtonDown"/>
+            <xctk:BusyIndicator x:Name="CityBusyIndicator" Height="auto" Width="180" Margin="284,179,552,327"/>
+            <User_Controls:HinttableComboBox x:Name="StreetCb" Hint="Street"  Height="auto" Width="170" Margin="540,135,306,371" IsEnabled="False" SelectionChanged="StreetCb_SelectionChanged" PreviewMouseLeftButtonDown="StreetCb_PreviewMouseLeftButtonDown"/>
+            <xctk:BusyIndicator x:Name="StreetBusyIndicator" Height="auto" Width="180" Margin="530,179,306,327"/>
+            <User_Controls:HinttableTextBox x:Name="BuildingTb" Hint="Building"  Height="auto" Width="170" Margin="780,135,66,371" TextChanged="BuildingTb_TextChanged"/>
+            <Expander x:Name="WorkTimeExpander" Margin="23,228,740,58" Foreground="Gray" Background="White" Header="Choose working hours">
+                <User_Controls:WorkTimeControl x:Name="MyWorkTime" HorizontalAlignment="Left" Height="190" VerticalAlignment="Top" Width="250" SelectionChanged="MyWorkTime_SelectionChanged"/>
+            </Expander>
+            <User_Controls:CircleValidator x:Name="WorkHoursValidator" HorizontalAlignment="Left" Height="auto" Margin="200,236,0,0" VerticalAlignment="Top" Width="30"/>
+            <User_Controls:HinttableTextBox x:Name="PhoneNumberTb" Hint="Phone Number"  HorizontalAlignment="Left" Height="auto" Width="170" Margin="300,236,0,0" VerticalAlignment="Top" TextChanged="PhoneNumberTb_TextChanged"/>
+            <User_Controls:HinttableTextBox x:Name="EmailTb" Hint="Email"  HorizontalAlignment="Left" Height="auto" Width="170" Margin="540,236,0,0" VerticalAlignment="Top" TextChanged="EmailTb_TextChanged"/>
+            <User_Controls:HinttableComboBox x:Name="CarTypeCb" Hint="Car Type" Height="auto" Width="170" Margin="300,311,546,195" SelectionChanged="CarTypeCb_SelectionChanged"/>
+            <wpfTool:IntegerUpDown x:Name="MaximalDistance" Height="auto" Margin="540,311,336,195" Minimum="0" HorizontalContentAlignment="Center" Watermark="Maximal Distance" ParsingNumberStyle="Integer" ValueChanged="MaximalDistance_ValueChanged"/>
+            <User_Controls:CircleValidator x:Name="MaxDistanceValidator" HorizontalAlignment="Left" Height="30" Margin="680,311,0,0" VerticalAlignment="Top" Width="30"/>
+            <wpfTool:IntegerUpDown x:Name="Experience" Margin="300,383,576,123" Minimum="0" Maximum="100" HorizontalContentAlignment="Center" Watermark="Years of Experience" ParsingNumberStyle="Integer" ValueChanged="Experience_ValueChanged"/>
+            <User_Controls:CircleValidator x:Name="ExperienceValidator" HorizontalAlignment="Left" Height="30" Margin="440,383,0,0" VerticalAlignment="Top" Width="30" RenderTransformOrigin="8.578,0.644"/>
+            <wpfTool:IntegerUpDown x:Name="MaxWeeklyTests" Margin="540,383,336,123" Minimum="0" Maximum="100" HorizontalContentAlignment="Center" Watermark="Max Weekly Tests" ParsingNumberStyle="Integer" ValueChanged="MaxWeeklyTests_ValueChanged"/>
+            <User_Controls:CircleValidator x:Name="MaxWeeklyTestsValidator" HorizontalAlignment="Left" Height="30" Margin="680,383,0,0" VerticalAlignment="Top" Width="30" RenderTransformOrigin="8.578,0.644"/>
+            <Button x:Name="SendButton" Background="Green" IsEnabled="False" Content="Add" FontSize="28" Height="Auto" Margin="780,273,66,206" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="SendButton_Click"/>
+            <Button x:Name="FillButton" Height="Auto" IsEnabled="False" Visibility="Visible" Content="Fill" Margin="876,359,40,137" Click="FillButton_Click"/>
+            <Button x:Name="ClearButton" Background="Red" Height="Auto" Content="Clear" Margin="770,426,146,74" Click="ClearButton_Click"/>
+            <Button x:Name="RefillButton" Visibility="Visible" Height="40" Content="Refill" Margin="770,358,145,136" Click="RefillButton_Click" Width="100"/>
+            <ProgressBar x:Name="ProgressBar" Value="{Binding ElementName=MyTesterAddPage, Path=ValidFieldsCount, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" Height="30" Margin="0,506,0,0" Foreground="Green"/>
+        </Grid>
+    </Border>
+
+</Page>

@@ -1,0 +1,391 @@
+﻿<Window x:Class="DrivingTestsManagerV1._2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DrivingTestsManagerV1._2"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="MainWindow" Foreground="White" WindowStyle="None"
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize"
+        Height="600" Width="1080" x:Name="MyMainWindow" 
+        Loaded="MyMainWindow_Loaded" PreviewMouseLeftButtonDown="MyMainWindow_PreviewMouseLeftButtonDown"
+        PreviewMouseRightButtonDown="MyMainWindow_PreviewMouseRightButtonDown">
+
+    <!--!#FF00AEFF!-->
+    <Window.Resources>
+        <!--************************* Storyboards *************************-->
+        <!--Main Menu Begin-->
+        <Storyboard x:Key="MenuOpen">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="GridMenu">
+                <EasingDoubleKeyFrame KeyTime="0" Value="60"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.25" Value="150"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="MenuClose">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="GridMenu">
+                <EasingDoubleKeyFrame KeyTime="0" Value="150"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.25" Value="60"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <!--Main Menu End-->
+
+        <!--Home Menu Begin-->
+        <Storyboard x:Key="HomeMenuOpen">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="GridHomeMenu">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.25" Value="180"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="HomeMenuClose">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="GridHomeMenu">
+                <EasingDoubleKeyFrame KeyTime="0" Value="180"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.25" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <!--Home Menu End-->
+
+        <!--Tester Menu Begin-->
+        <Storyboard x:Key="TesterMenuOpen">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="GridTesterMenu">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.25" Value="180"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="TesterMenuClose">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="GridTesterMenu">
+                <EasingDoubleKeyFrame KeyTime="0" Value="180"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.25" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <!--Tester Menu End-->
+
+        <!--Trainee Menu Begin-->
+        <Storyboard x:Key="TraineeMenuOpen">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="GridTraineeMenu">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.25" Value="180"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="TraineeMenuClose">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="GridTraineeMenu">
+                <EasingDoubleKeyFrame KeyTime="0" Value="180"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.25" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <!--Trainee Menu End-->
+
+        <!--Test Menu Begin-->
+        <Storyboard x:Key="TestMenuOpen">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="GridTestMenu">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.25" Value="180"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="TestMenuClose">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="GridTestMenu">
+                <EasingDoubleKeyFrame KeyTime="0" Value="180"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.25" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <!--Test Menu End-->
+    </Window.Resources>
+
+    <!--******************* TRIGGERS BEGIN! *******************-->
+    <Window.Triggers>
+        <!--Main Menu Begin-->
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ButtonOpenMenu">
+            <BeginStoryboard Storyboard="{StaticResource MenuOpen}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ButtonCloseMenu">
+            <BeginStoryboard Storyboard="{StaticResource MenuClose}"/>
+        </EventTrigger>
+        <!--Main Menu End-->
+
+        <!--Home Menu Begin-->
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ButtonOpenHomeMenu">
+            <BeginStoryboard Storyboard="{StaticResource HomeMenuOpen}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ButtonCloseHomeMenu">
+            <BeginStoryboard Storyboard="{StaticResource HomeMenuClose}"/>
+        </EventTrigger>
+        <!--Home Menu End-->
+
+        <!--Tester Menu Begin-->
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ButtonOpenTesterMenu">
+            <BeginStoryboard Storyboard="{StaticResource TesterMenuOpen}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ButtonCloseAddMenu">
+            <BeginStoryboard Storyboard="{StaticResource TesterMenuClose}"/>
+        </EventTrigger>
+        <!--Tester Menu End-->
+
+        <!--Trainee Menu Begin-->
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ButtonOpenTraineeMenu">
+            <BeginStoryboard Storyboard="{StaticResource TraineeMenuOpen}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ButtonCloseTraineeMenu">
+            <BeginStoryboard Storyboard="{StaticResource TraineeMenuClose}"/>
+        </EventTrigger>
+        <!--Trainee Menu End-->
+
+        <!--Test Menu Begin-->
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ButtonOpenTestMenu">
+            <BeginStoryboard Storyboard="{StaticResource TestMenuOpen}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ButtonCloseTestMenu">
+            <BeginStoryboard Storyboard="{StaticResource TestMenuClose}"/>
+        </EventTrigger>
+        <!--Test Menu End-->
+    </Window.Triggers>
+    <!--******************* TRIGGERS END! *******************-->
+
+    <Border BorderBrush="#FF00AEFF" BorderThickness="2">
+        <Grid x:Name="MainGrid" Background="LightGray">
+            <Frame x:Name="MainFrame" HorizontalAlignment="Left" Height="536" Margin="60,60,0,0" VerticalAlignment="Top" Width="1016" NavigationUIVisibility="Hidden"/>
+
+            <!--Upper Bar Begin-->
+            <Grid Height="60" VerticalAlignment="Top" Background="#FF00AEFF">
+                <Label Content="Driving Tests Manager" Foreground="White" FontSize="22" Height="60" Width="1080" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" PreviewMouseDown="Header_PreviewMouseDown"/>
+                <StackPanel VerticalAlignment="Center" Orientation="Horizontal" HorizontalAlignment="Right">
+                    <TextBlock x:Name="Header" Text="Elyasaf Elbaz" VerticalAlignment="Center" FontSize="18"/>
+                    <materialDesign:PopupBox Margin="10" PlacementMode="BottomAndAlignRightEdges" StaysOpen="True">
+                        <StackPanel Width="150">
+                            <Button Content="Account"/>
+                            <Button x:Name="settingsButton" Content="Settings" Click="SettingsButton_Click" />
+                            <Button Content="Help"/>
+                            <Separator/>
+                            <Button x:Name="ButtonPopUpLogout" Content="Logout" Click="ButtonPopUpLogout_Click"/>
+                        </StackPanel>
+                    </materialDesign:PopupBox>
+                    <ListViewItem Name="CloseIconItem" Height="60" Width="60" Foreground="#FF00AEFF" PreviewMouseLeftButtonDown="CloseIconItem_PreviewMouseLeftButtonDown" MouseEnter="CloseIconItem_MouseEnter" MouseLeave="CloseIconItem_MouseLeave">
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Name="CloseIcon" Kind="Close" Width="40" Height="40" Foreground="Black" Margin="2"/>
+                        </StackPanel>
+                    </ListViewItem>
+                </StackPanel>
+            </Grid>
+            <!--Upper Bar End-->
+
+            <!--Left Menu Begin-->
+            <!--GridMenu-->
+            <Grid x:Name="GridMenu" Width="60" HorizontalAlignment="Left" Background="#FF0068FF">
+                <StackPanel>
+                    <Grid Height="60" Background="White">
+                        <Button x:Name="ButtonCloseMenu" Background="{x:Null}" BorderBrush="{x:Null}" Width="60" Height="60" VerticalAlignment="Top" HorizontalAlignment="Right" Visibility="Collapsed" Click="ButtonCloseMenu_Click">
+                            <materialDesign:PackIcon Foreground="#FF0068FF" Kind="ArrowLeft" Width="25" Height="25"/>
+                        </Button>
+                        <Button x:Name="ButtonOpenMenu" Background="{x:Null}" BorderBrush="{x:Null}" Width="60" Height="60" VerticalAlignment="Top" HorizontalAlignment="Right" Click="ButtonOpenMenu_Click">
+                            <materialDesign:PackIcon Foreground="#FF0068FF" Kind="Menu" Width="25" Height="25"/>
+                        </Button>
+                    </Grid>
+                    <!--HomeMenu-->
+                    <ListView ScrollViewer.HorizontalScrollBarVisibility="Disabled" Foreground="#FF0068FF">
+                        <StackPanel Orientation="Horizontal">
+                            <Grid Height="42" Margin="1">
+                                <Button x:Name="ButtonOpenHomeMenu" Background="{x:Null}" BorderBrush="{x:Null}" Width="60" Height="60" VerticalAlignment="Top" HorizontalAlignment="Stretch" Click="ButtonOpenHomeMenu_Click" Margin="-10,-8,-3,0">
+                                    <materialDesign:PackIcon Foreground="White" Kind="Home" Width="25" Height="25" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                </Button>
+                            </Grid>
+                            <TextBlock Text="Home" FontSize="13" VerticalAlignment="Center" Foreground="White"/>
+                        </StackPanel>
+                        <!--Tester Menu-->
+                        <StackPanel Orientation="Horizontal">
+                            <Grid Height="42" Margin="1">
+                                <Button x:Name="ButtonOpenTesterMenu" Background="{x:Null}" BorderBrush="{x:Null}" Width="60" Height="60" VerticalAlignment="Top" HorizontalAlignment="Stretch" Click="ButtonOpenTesterMenu_Click" Margin="-10,-8,-3,0">
+                                    <materialDesign:PackIcon Foreground="White" Kind="Teacher" Width="25" Height="25" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                </Button>
+                            </Grid>
+                            <TextBlock Text="Add" FontSize="13" Margin="8, 0, 0, 0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+                        </StackPanel>
+                        <!--Trainee Menu-->
+                        <StackPanel Orientation="Horizontal">
+                            <Grid Height="42" Margin="1">
+                                <Button x:Name="ButtonOpenTraineeMenu" Background="{x:Null}" BorderBrush="{x:Null}" Width="60" Height="60" VerticalAlignment="Top" HorizontalAlignment="Stretch" Click="ButtonOpenTraineeMenu_Click" Margin="-10,-8,-3,0">
+                                    <materialDesign:PackIcon Foreground="White" Kind="User" Width="25" Height="25" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                </Button>
+                            </Grid>
+                            <TextBlock Text="Edit" FontSize="13" Margin="8, 0, 0, 0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+                        </StackPanel>
+                        <!--Test Menu-->
+                        <StackPanel Orientation="Horizontal">
+                            <Grid Height="42" Margin="1">
+                                <Button x:Name="ButtonOpenTestMenu" Background="{x:Null}" BorderBrush="{x:Null}" Width="60" Height="60" VerticalAlignment="Top" HorizontalAlignment="Stretch" Click="ButtonOpenTestMenu_Click" Margin="-10,-8,-3,0">
+                                    <materialDesign:PackIcon Foreground="White" Kind="Note" Width="25" Height="25" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                </Button>
+                            </Grid>
+                            <TextBlock Text="Delete" FontSize="13" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+                        </StackPanel>
+
+                    </ListView>
+                </StackPanel>
+            </Grid>
+            <!--Main Menu End-->
+
+            <!--Home Menu Begin-->
+            <Grid x:Name="GridHomeMenu" Width="0" HorizontalAlignment="Left" Background="#FF0068FF" Margin="60 60 0 300">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="5*"/>
+                    <RowDefinition Height="19*"/>
+                </Grid.RowDefinitions>
+                <StackPanel Grid.RowSpan="2">
+                    <Grid Height="60" Background="#FFB1E6FF">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="9*"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Button x:Name="ButtonCloseHomeMenu" Background="{x:Null}" BorderBrush="{x:Null}" Width="60" Height="60" VerticalAlignment="Top" HorizontalAlignment="Right" Visibility="Collapsed" Click="ButtonCloseHomeMenu_Click" Grid.RowSpan="2">
+                            <materialDesign:PackIcon Foreground="#FF0068FF" Kind="ArrowLeft" Width="25" Height="25"/>
+                        </Button>
+                    </Grid>
+                    <ListView ScrollViewer.HorizontalScrollBarVisibility="Disabled" Foreground="#FF0068FF">
+                        <ListViewItem x:Name="ShowTestersItem" Height="60" Foreground="White" PreviewMouseLeftButtonDown="ShowTestersItem_PreviewMouseLeftButtonDown">
+                            <StackPanel Orientation="Horizontal">
+                                <materialDesign:PackIcon Kind="Teacher" Margin="10" Width="25" Height="25" VerticalAlignment="Center" />
+                                <TextBlock Text="Show All Testers" VerticalAlignment="Center" Margin="20 10"/>
+                            </StackPanel>
+                        </ListViewItem>
+                        <ListViewItem x:Name="ShowTrainees" Height="60" Foreground="White" PreviewMouseLeftButtonDown="ShowTrainees_PreviewMouseLeftButtonDown" >
+                            <StackPanel Orientation="Horizontal">
+                                <materialDesign:PackIcon Kind="Users" Margin="10" Width="25" Height="25" VerticalAlignment="Center"/>
+                                <TextBlock Text="Show All Trainees" VerticalAlignment="Center" Margin="20 10"/>
+                            </StackPanel>
+                        </ListViewItem>
+                        <ListViewItem x:Name="ShowTests" Height="60" Foreground="White" PreviewMouseLeftButtonDown="ShowTests_PreviewMouseLeftButtonDown">
+                            <StackPanel Orientation="Horizontal">
+                                <materialDesign:PackIcon Kind="Events" Margin="10" Width="25" Height="25" VerticalAlignment="Center"/>
+                                <TextBlock Text="Show All Tests" VerticalAlignment="Center" Margin="20 10"/>
+                            </StackPanel>
+                        </ListViewItem>
+                        <ListViewItem Height="60" Foreground="White">
+                            <StackPanel Orientation="Horizontal">
+                                <materialDesign:PackIcon Kind="Delete" Margin="10" Width="25" Height="25" VerticalAlignment="Center"/>
+                                <TextBlock Text="Delete" VerticalAlignment="Center" Margin="20 10"/>
+                            </StackPanel>
+                        </ListViewItem>
+                    </ListView>
+                </StackPanel>
+            </Grid>
+            <!--Home Menu End-->
+
+            <!--Tester Menu Begin-->
+            <Grid x:Name="GridTesterMenu" Width="0" HorizontalAlignment="Left" Background="#FF0068FF" Margin="60,120,0,296">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="5*"/>
+                    <RowDefinition Height="19*"/>
+                </Grid.RowDefinitions>
+                <StackPanel Grid.RowSpan="2">
+                    <Grid Height="60" Background="#FFB1E6FF">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="9*"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Button x:Name="ButtonCloseAddMenu" Background="{x:Null}" BorderBrush="{x:Null}" Width="60" Height="60" VerticalAlignment="Top" HorizontalAlignment="Right" Visibility="Collapsed" Click="ButtonCloseAddMenu_Click" Grid.RowSpan="2">
+                            <materialDesign:PackIcon Foreground="#FF0068FF" Kind="ArrowLeft" Width="25" Height="25"/>
+                        </Button>
+                    </Grid>
+                    <ListView ScrollViewer.HorizontalScrollBarVisibility="Disabled" Foreground="#FF0068FF">
+                        <!--Show All Testers-->
+                        <ListViewItem x:Name="ShowAllTestersItem" Height="60" Foreground="White" PreviewMouseLeftButtonDown="ShowAllTestersItem_PreviewMouseLeftButtonDown">
+                            <StackPanel Orientation="Horizontal">
+                                <materialDesign:PackIcon Kind="Show" Margin="10" Width="25" Height="25" VerticalAlignment="Center"/>
+                                <TextBlock Text="Show All Testers" VerticalAlignment="Center" Margin="20 10"/>
+                            </StackPanel>
+                        </ListViewItem>
+                        <!--Add Tester-->
+                        <ListViewItem x:Name="AddTesterItem" Height="60" Foreground="White" PreviewMouseLeftButtonDown="AddTesterItem_PreviewMouseLeftButtonDown">
+                            <StackPanel Orientation="Horizontal">
+                                <materialDesign:PackIcon Kind="Plus" Margin="10" Width="25" Height="25" VerticalAlignment="Center"/>
+                                <TextBlock Text="Add a Tester" VerticalAlignment="Center" Margin="20 10"/>
+                            </StackPanel>
+                        </ListViewItem>
+                    </ListView>
+                </StackPanel>
+            </Grid>
+            <!--Tester Menu End-->
+
+            <!--Trainee Menu Begin-->
+            <Grid x:Name="GridTraineeMenu" Width="0" HorizontalAlignment="Left" Background="#FF0068FF" Margin="60,180,0,236">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="5*"/>
+                    <RowDefinition Height="19*"/>
+                </Grid.RowDefinitions>
+                <StackPanel Grid.RowSpan="2">
+                    <Grid Height="60" Background="#FFB1E6FF">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="9*"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Button x:Name="ButtonCloseTraineeMenu" Background="{x:Null}" BorderBrush="{x:Null}" Width="60" Height="60" VerticalAlignment="Top" HorizontalAlignment="Right" Visibility="Collapsed" Click="ButtonCloseTraineeMenu_Click" Grid.RowSpan="2">
+                            <materialDesign:PackIcon Foreground="#FF0068FF" Kind="ArrowLeft" Width="25" Height="25"/>
+                        </Button>
+                    </Grid>
+                    <ListView ScrollViewer.HorizontalScrollBarVisibility="Disabled" Foreground="#FF0068FF">
+                        <!--Show All Trainees-->
+                        <ListViewItem x:Name="ShowAllTraineesItem" Height="60" Foreground="White" PreviewMouseLeftButtonDown="ShowAllTraineesItem_PreviewMouseLeftButtonDown">
+                            <StackPanel Orientation="Horizontal">
+                                <materialDesign:PackIcon Kind="Show" Margin="10" Width="25" Height="25" VerticalAlignment="Center"/>
+                                <TextBlock Text="Show All Trainees" VerticalAlignment="Center" Margin="20 10"/>
+                            </StackPanel>
+                        </ListViewItem>
+                        <!--Add Trainee-->
+                        <ListViewItem x:Name="AddTraineeItem" Height="60" Foreground="White" PreviewMouseLeftButtonDown="AddTraineeItem_PreviewMouseLeftButtonDown" >
+                            <StackPanel Orientation="Horizontal">
+                                <materialDesign:PackIcon Kind="Plus" Margin="10" Width="25" Height="25" VerticalAlignment="Center"/>
+                                <TextBlock Text="Add a Trainee" VerticalAlignment="Center" Margin="20 10"/>
+                            </StackPanel>
+                        </ListViewItem>
+                    </ListView>
+                </StackPanel>
+            </Grid>
+            <!--Trainee Menu End-->
+
+            <!--Test Menu Begin-->
+            <Grid x:Name="GridTestMenu" Width="0" HorizontalAlignment="Left" Background="#FF0068FF" Margin="60,240,0,176">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="5*"/>
+                    <RowDefinition Height="19*"/>
+                </Grid.RowDefinitions>
+                <StackPanel Grid.RowSpan="2">
+                    <Grid Height="60" Background="#FFB1E6FF">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="9*"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Button x:Name="ButtonCloseTestMenu" Background="{x:Null}" BorderBrush="{x:Null}" Width="60" Height="60" VerticalAlignment="Top" HorizontalAlignment="Right" Visibility="Collapsed" Click="ButtonCloseTestMenu_Click" Grid.RowSpan="2">
+                            <materialDesign:PackIcon Foreground="#FF0068FF" Kind="ArrowLeft" Width="25" Height="25"/>
+                        </Button>
+                    </Grid>
+                    <!--Show All Tests-->
+                    <ListView ScrollViewer.HorizontalScrollBarVisibility="Disabled" Foreground="#FF0068FF">
+                        <ListViewItem Height="60" Foreground="White" PreviewMouseLeftButtonDown="ListViewItem_PreviewMouseLeftButtonDown" >
+                            <StackPanel Orientation="Horizontal">
+                                <materialDesign:PackIcon Kind="Show" Margin="10" Width="25" Height="25" VerticalAlignment="Center"/>
+                                <TextBlock Text="Show All Tests" VerticalAlignment="Center" Margin="20 10"/>
+                            </StackPanel>
+                        </ListViewItem>
+
+                        <!--Add a Test-->
+                        <ListViewItem x:Name="AddTestItem" Height="60" Foreground="White" PreviewMouseLeftButtonDown="FindFreeTesterItem_PreviewMouseLeftButtonDown" >
+                            <StackPanel Orientation="Horizontal">
+                                <materialDesign:PackIcon Kind="Plus" Margin="10" Width="25" Height="25" VerticalAlignment="Center"/>
+                                <TextBlock Text="Add a Test" VerticalAlignment="Center" Margin="20 10"/>
+                            </StackPanel>
+                        </ListViewItem>
+
+                        <!--Find Free Tester
+                        <ListViewItem x:Name="FindFreeTesterItem" Height="60" Foreground="White" PreviewMouseLeftButtonDown="FindFreeTesterItem_PreviewMouseLeftButtonDown" >
+                            <StackPanel Orientation="Horizontal">
+                                <materialDesign:PackIcon Kind="Search" Margin="10" Width="25" Height="25" VerticalAlignment="Center"/>
+                                <TextBlock Text="Find Free Tester" VerticalAlignment="Center" Margin="20 10"/>
+                            </StackPanel>
+                        </ListViewItem>
+                        -->
+                    </ListView>
+                </StackPanel>
+            </Grid>
+            <!--Test Menu End-->
+            <!--Left Menu End-->
+        </Grid>
+    </Border>
+</Window>

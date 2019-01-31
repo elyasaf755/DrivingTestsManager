@@ -1,0 +1,583 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DistancesList>
+  <DistanceStruct>
+    <OriginAddress>אבן יהודה, אגמון, 4</OriginAddress>
+    <DestinationAddress>ירושלים, אבו ריאלה</DestinationAddress>
+    <Distance>81.5937408</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>אבן יהודה, אגמון, 4</OriginAddress>
+    <DestinationAddress>בית אל, סופה, 4</DestinationAddress>
+    <Distance>109.5963264</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>באר שבע, משעול פנקס דוד, 24</OriginAddress>
+    <DestinationAddress>בית אל, סופה, 4</DestinationAddress>
+    <Distance>131.0006016</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>באר שבע, משעול פנקס דוד, 24</OriginAddress>
+    <DestinationAddress>ירושלים, הרב קוק</DestinationAddress>
+    <Distance>107.18231039999999</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>באר שבע, משעול פנקס דוד, 24</OriginAddress>
+    <DestinationAddress>ירושלים, א טברי</DestinationAddress>
+    <Distance>108.95258880000002</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>באר שבע, משעול פנקס דוד, 24</OriginAddress>
+    <DestinationAddress>אבן יהודה, אבן יהודה</DestinationAddress>
+    <Distance>135.66769920000002</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>ירושלים, הר הרצל</DestinationAddress>
+    <Distance>56.327040000000004</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>ירושלים, הרב קוק</DestinationAddress>
+    <Distance>27.1979136</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>באר שבע, משעול פנקס דוד, 24</DestinationAddress>
+    <Distance>164.15308800000003</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>ירושלים, הרב קוק</DestinationAddress>
+    <Distance>27.1979136</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>חיפה, ירושלים</DestinationAddress>
+    <Distance>196.339968</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>חיפה, הבריכה, 3</DestinationAddress>
+    <Distance>201.168</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>ירושלים, הרב קוק</DestinationAddress>
+    <Distance>27.1979136</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>ירושלים, הרב קוק</DestinationAddress>
+    <Distance>27.1979136</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>ירושלים, הרב קוק</DestinationAddress>
+    <Distance>27.1979136</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>באר שבע, משעול פנקס דוד, 24</DestinationAddress>
+    <Distance>164.15308800000003</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>בית אל, אלון</DestinationAddress>
+    <Distance>0.4828032</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>ירושלים, אבו ריאלה</DestinationAddress>
+    <Distance>61.959744</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>ירושלים, הרב קוק</DestinationAddress>
+    <Distance>27.1979136</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>עבדון, עבדון</DestinationAddress>
+    <Distance>228.52684800000003</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>ירושלים, הרב קוק</DestinationAddress>
+    <Distance>27.1979136</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>אבו גוש, אבו גוש</DestinationAddress>
+    <Distance>58.741056</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>באר שבע, משעול פנקס דוד, 24</DestinationAddress>
+    <Distance>164.15308800000003</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>ירושלים, הרב קוק</DestinationAddress>
+    <Distance>27.1979136</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>ירושלים, הרב קוק</DestinationAddress>
+    <Distance>27.1979136</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>חיפה, א"ת מפרץ(צפון-מזרח)</DestinationAddress>
+    <Distance>191.51193600000002</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>ירושלים, הרב קוק</DestinationAddress>
+    <Distance>27.1979136</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>חיפה, א סלט</DestinationAddress>
+    <Distance>194.730624</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>אבן יהודה, אבן יהודה</DestinationAddress>
+    <Distance>136.63330560000003</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>אבו גוש, אבו גוש</DestinationAddress>
+    <Distance>58.741056</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>ירושלים, הרב קוק</DestinationAddress>
+    <Distance>27.1979136</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>חיפה, א"ת מפרץ(צפון-מערב)</DestinationAddress>
+    <Distance>194.730624</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>חיפה, ירושלים</DestinationAddress>
+    <Distance>196.339968</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>חיפה, הבריכה, 3</DestinationAddress>
+    <Distance>201.168</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>אבו גוש, אבו גוש</DestinationAddress>
+    <Distance>58.741056</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>חיפה, ירושלים</DestinationAddress>
+    <Distance>196.339968</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>חיפה, א סלט</DestinationAddress>
+    <Distance>194.730624</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>בית אל, אבשלום</DestinationAddress>
+    <Distance>0.4828032</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>חיפה, א סלט</DestinationAddress>
+    <Distance>194.730624</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>ירושלים, הרב קוק</DestinationAddress>
+    <Distance>27.1979136</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>ירושלים, הרב קוק</DestinationAddress>
+    <Distance>27.1979136</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>ירושלים, הרב קוק</DestinationAddress>
+    <Distance>27.1979136</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>חיפה, א סלט</DestinationAddress>
+    <Distance>194.730624</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>חיפה, א סלט</DestinationAddress>
+    <Distance>194.730624</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>ירושלים, א טברי</DestinationAddress>
+    <Distance>44.739763200000006</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>ירושלים, הרב קוק</DestinationAddress>
+    <Distance>27.1979136</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>חיפה, הרב הרצוג</DestinationAddress>
+    <Distance>194.730624</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>אבו גוש, אבו גוש</DestinationAddress>
+    <Distance>58.741056</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>אבו גוש, אבו גוש</DestinationAddress>
+    <Distance>58.741056</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>ירושלים, הרב קוק</DestinationAddress>
+    <Distance>27.1979136</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>אבו גוש, אבו גוש</DestinationAddress>
+    <Distance>58.741056</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>חיפה, א סלט</DestinationAddress>
+    <Distance>194.730624</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>בית אל, אופירה</DestinationAddress>
+    <Distance>0.16093440000000003</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>חיפה, הבריכה, 3</DestinationAddress>
+    <Distance>201.168</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>ירושלים, האביבית</DestinationAddress>
+    <Distance>58.258252800000008</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>חיפה, הבריכה</DestinationAddress>
+    <Distance>201.168</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>ירושלים, הרב קוק</DestinationAddress>
+    <Distance>27.1979136</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>ירושלים, הרב קוק</DestinationAddress>
+    <Distance>27.1979136</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>עבדון, עבדון</DestinationAddress>
+    <Distance>228.52684800000003</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>ירושלים, אבו הוריירה סמ2</DestinationAddress>
+    <Distance>23.6573568</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>ירושלים, הרב קוק</DestinationAddress>
+    <Distance>27.1979136</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>חיפה, הבריכה, 3</DestinationAddress>
+    <Distance>201.168</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>אבו גוש, אבו גוש</DestinationAddress>
+    <Distance>58.741056</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>אבו גוש, אבו גוש</DestinationAddress>
+    <Distance>58.741056</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>באר שבע, משעול פנקס דוד</DestinationAddress>
+    <Distance>164.15308800000003</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>ירושלים, א זוהור</DestinationAddress>
+    <Distance>53.913024000000007</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>חיפה, א סלט</DestinationAddress>
+    <Distance>194.730624</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>אבו גוש, אבו גוש</DestinationAddress>
+    <Distance>58.741056</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>בית אל, סופה, 4</OriginAddress>
+    <DestinationAddress>אבו גוש, אבו גוש</DestinationAddress>
+    <Distance>58.741056</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>חיפה, הבריכה, 3</OriginAddress>
+    <DestinationAddress>ירושלים, א זוהור</DestinationAddress>
+    <Distance>148.3815168</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>חיפה, הבריכה, 3</OriginAddress>
+    <DestinationAddress>חיפה, הבריכה</DestinationAddress>
+    <Distance>1.1265408</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>חיפה, הבריכה, 3</OriginAddress>
+    <DestinationAddress>עבדון, עבדון</DestinationAddress>
+    <Distance>44.0960256</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>חיפה, הבריכה, 3</OriginAddress>
+    <DestinationAddress>אבו גוש, אבו גוש</DestinationAddress>
+    <Distance>137.4379776</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>חיפה, הבריכה, 3</OriginAddress>
+    <DestinationAddress>עבדון, עבדון</DestinationAddress>
+    <Distance>44.0960256</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>חיפה, הבריכה, 3</OriginAddress>
+    <DestinationAddress>בית אל, סופה, 4</DestinationAddress>
+    <Distance>173.809152</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>חיפה, הבריכה, 3</OriginAddress>
+    <DestinationAddress>ירושלים, הרב קוק</DestinationAddress>
+    <Distance>149.9908608</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>חיפה, הבריכה, 3</OriginAddress>
+    <DestinationAddress>אבו גוש, אבו גוש</DestinationAddress>
+    <Distance>137.4379776</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>חיפה, הבריכה, 3</OriginAddress>
+    <DestinationAddress>ירושלים, הרב קוק</DestinationAddress>
+    <Distance>149.9908608</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>חיפה, הבריכה, 3</OriginAddress>
+    <DestinationAddress>ירושלים, אבו הוריירה סמ2</DestinationAddress>
+    <Distance>152.2439424</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>חיפה, הבריכה, 3</OriginAddress>
+    <DestinationAddress>אבו גוש, אבו גוש</DestinationAddress>
+    <Distance>137.4379776</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>חיפה, הבריכה, 3</OriginAddress>
+    <DestinationAddress>ירושלים, הרב קוק</DestinationAddress>
+    <Distance>149.9908608</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>חיפה, הבריכה, 3</OriginAddress>
+    <DestinationAddress>אבו גוש, אבו גוש</DestinationAddress>
+    <Distance>137.4379776</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>חיפה, הבריכה, 3</OriginAddress>
+    <DestinationAddress>אבו גוש, אבו גוש</DestinationAddress>
+    <Distance>137.4379776</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>חיפה, הבריכה, 3</OriginAddress>
+    <DestinationAddress>בית אל, אופירה</DestinationAddress>
+    <Distance>173.809152</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>ירושלים, אימרו אל קיס סמ2, 44</OriginAddress>
+    <DestinationAddress>אבו גוש, אבו גוש</DestinationAddress>
+    <Distance>16.09344</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>ירושלים, אימרו אל קיס סמ2, 44</OriginAddress>
+    <DestinationAddress>באר שבע, האבות</DestinationAddress>
+    <Distance>121.82734080000002</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>ירושלים, אימרו אל קיס סמ2, 44</OriginAddress>
+    <DestinationAddress>באר שבע, משעול פנקס דוד</DestinationAddress>
+    <Distance>121.82734080000002</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>ירושלים, אימרו אל קיס סמ2, 44</OriginAddress>
+    <DestinationAddress>אביעזר, אביעזר</DestinationAddress>
+    <Distance>45.7053696</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>ירושלים, אימרו אל קיס סמ2, 44</OriginAddress>
+    <DestinationAddress>אבטליון, אבטליון</DestinationAddress>
+    <Distance>173.809152</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>ירושלים, אימרו אל קיס סמ2, 44</OriginAddress>
+    <DestinationAddress>אבו גוש, אבו גוש</DestinationAddress>
+    <Distance>16.09344</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>ירושלים, אימרו אל קיס סמ2, 44</OriginAddress>
+    <DestinationAddress>באר שבע, משעול פנקס דוד</DestinationAddress>
+    <Distance>121.82734080000002</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>ירושלים, אימרו אל קיס סמ2, 44</OriginAddress>
+    <DestinationAddress>אבו גוש, אבו גוש</DestinationAddress>
+    <Distance>16.09344</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>ירושלים, אימרו אל קיס סמ2, 44</OriginAddress>
+    <DestinationAddress>אבו גוש, אל רשיד</DestinationAddress>
+    <Distance>16.2543744</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>ירושלים, אימרו אל קיס סמ2, 44</OriginAddress>
+    <DestinationAddress>ירושלים, הרב קוק</DestinationAddress>
+    <Distance>2.7358848</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>ירושלים, אימרו אל קיס סמ2, 44</OriginAddress>
+    <DestinationAddress>באר שבע, משעול פנקס דוד, 24</DestinationAddress>
+    <Distance>121.82734080000002</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>ירושלים, אימרו אל קיס סמ2, 44</OriginAddress>
+    <DestinationAddress>אבו גוש</DestinationAddress>
+    <Distance>16.09344</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>ירושלים, אימרו אל קיס סמ2, 44</OriginAddress>
+    <DestinationAddress>ירושלים</DestinationAddress>
+    <Distance>5.3108352</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>ירושלים, אימרו אל קיס סמ2, 44</OriginAddress>
+    <DestinationAddress>עופרה, הגפן</DestinationAddress>
+    <Distance>62.764416000000004</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>ירושלים, אימרו אל קיס סמ2, 44</OriginAddress>
+    <DestinationAddress>באר שבע, משעול פנקס דוד, 24</DestinationAddress>
+    <Distance>121.82734080000002</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>ירושלים, אימרו אל קיס סמ2, 44</OriginAddress>
+    <DestinationAddress>באר שבע, משעול פנקס דוד, 24</DestinationAddress>
+    <Distance>121.82734080000002</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>ירושלים, אימרו אל קיס סמ2, 44</OriginAddress>
+    <DestinationAddress>חיפה</DestinationAddress>
+    <Distance>152.5658112</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>ירושלים, אימרו אל קיס סמ2, 44</OriginAddress>
+    <DestinationAddress>ירושלים, הרב קוק</DestinationAddress>
+    <Distance>2.7358848</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>ירושלים, אימרו אל קיס סמ2, 44</OriginAddress>
+    <DestinationAddress>אבו גוש, ג'בר</DestinationAddress>
+    <Distance>16.2543744</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>ירושלים, אימרו אל קיס סמ2, 44</OriginAddress>
+    <DestinationAddress>אשקלון, אב</DestinationAddress>
+    <Distance>80.3062656</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>ירושלים, אימרו אל קיס סמ2, 44</OriginAddress>
+    <DestinationAddress>אבו גוש, אבו גוש</DestinationAddress>
+    <Distance>16.09344</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>ירושלים, אימרו אל קיס סמ2, 44</OriginAddress>
+    <DestinationAddress>אבו גוש, אבו גוש</DestinationAddress>
+    <Distance>16.09344</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>ירושלים, אימרו אל קיס סמ2, 44</OriginAddress>
+    <DestinationAddress>אבו גוש, אבו גוש</DestinationAddress>
+    <Distance>16.09344</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>ירושלים, אימרו אל קיס סמ2, 44</OriginAddress>
+    <DestinationAddress>אבו גוש, אבו גוש</DestinationAddress>
+    <Distance>16.2543744</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>ירושלים, אימרו אל קיס סמ2, 44</OriginAddress>
+    <DestinationAddress>אבו גוש, אל רשיד</DestinationAddress>
+    <Distance>16.2543744</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>ירושלים, אימרו אל קיס סמ2, 44</OriginAddress>
+    <DestinationAddress>אבו גוש, אבו גוש</DestinationAddress>
+    <Distance>16.2543744</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>ירושלים, אימרו אל קיס סמ2, 44</OriginAddress>
+    <DestinationAddress>אבו גוש, אבו גוש</DestinationAddress>
+    <Distance>16.09344</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>ירושלים, אימרו אל קיס סמ2, 44</OriginAddress>
+    <DestinationAddress>אבו גוש, אל-חנאא'</DestinationAddress>
+    <Distance>16.09344</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>ירושלים, אימרו אל קיס סמ2, 44</OriginAddress>
+    <DestinationAddress>חיפה, האבות</DestinationAddress>
+    <Distance>157.715712</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>ירושלים, אימרו אל קיס סמ2, 44</OriginAddress>
+    <DestinationAddress>ירושלים, הרב קוק</DestinationAddress>
+    <Distance>2.7358848</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>עופרה, משעול הר אפרים, 1</OriginAddress>
+    <DestinationAddress>אבו גוש, אבו גוש</DestinationAddress>
+    <Distance>58.097318400000006</Distance>
+  </DistanceStruct>
+  <DistanceStruct>
+    <OriginAddress>עופרה, משעול הר אפרים, 1</OriginAddress>
+    <DestinationAddress>בית אל, סופה, 4</DestinationAddress>
+    <Distance>12.391948800000002</Distance>
+  </DistanceStruct>
+</DistancesList>

@@ -1,0 +1,132 @@
+﻿<UserControl x:Class="DrivingTestsManagerV1._2.User_Controls.WorkTimeTable"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:local="clr-namespace:DrivingTestsManagerV1._2.User_Controls"
+             mc:Ignorable="d" Height="175" Width="270">
+    <Grid x:Name="WorkTimeTableGrid" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="Sun9"  Background="Red" HorizontalAlignment="Stretch"    VerticalAlignment="Stretch" Width="auto" Height="auto" Click="Click" Grid.Column="0" Grid.Row="0">
+            <materialDesign:PackIcon x:Name="Sun9Icon" Kind="Close"/>
+        </Button>
+        <Button x:Name="Sun10" Background="Red" HorizontalAlignment="Stretch"    VerticalAlignment="Stretch" Width="auto" Height="auto" Click="Click" Grid.Column="0" Grid.Row="1">
+            <materialDesign:PackIcon x:Name="Sun10Icon" Kind="Close"/>
+        </Button>
+        <Button x:Name="Sun11" Background="Red" HorizontalAlignment="Stretch"    VerticalAlignment="Stretch" Width="auto" Height="auto" Click="Click" Grid.Column="0" Grid.Row="2">
+            <materialDesign:PackIcon x:Name="Sun11Icon" Kind="Close"/>
+        </Button>
+        <Button x:Name="Sun12" Background="Red" HorizontalAlignment="Stretch"   VerticalAlignment="Stretch" Width="auto" Height="auto" Click="Click" Grid.Column="0" Grid.Row="3">
+            <materialDesign:PackIcon x:Name="Sun12Icon" Kind="Close"/>
+        </Button>
+        <Button x:Name="Sun13" Background="Red" HorizontalAlignment="Stretch"   VerticalAlignment="Stretch" Width="auto" Height="auto" Click="Click" Grid.Column="0" Grid.Row="4">
+            <materialDesign:PackIcon x:Name="Sun13Icon" Kind="Close"/>
+        </Button>
+        <Button x:Name="Sun14" Background="Red" HorizontalAlignment="Stretch"   VerticalAlignment="Stretch" Width="auto" Height="auto" Click="Click" Grid.Column="0" Grid.Row="5">
+            <materialDesign:PackIcon x:Name="Sun14Icon" Kind="Close"/>
+        </Button>
+        <Button x:Name="Sun15" Background="Red" HorizontalAlignment="Stretch"   VerticalAlignment="Stretch" Width="auto" Height="auto" Click="Click" Grid.Column="0" Grid.Row="6">
+            <materialDesign:PackIcon x:Name="Sun15Icon" Kind="Close"/>
+        </Button>
+        <Button x:Name="Mon9"  Background="Red" HorizontalAlignment="Stretch"    VerticalAlignment="Stretch" Width="auto" Height="auto" Click="Click" Grid.Column="1" Grid.Row="0">
+            <materialDesign:PackIcon x:Name="Mon9Icon" Kind="Close"/>
+        </Button>
+        <Button x:Name="Mon10" Background="Red" HorizontalAlignment="Stretch"   VerticalAlignment="Stretch" Width="auto" Height="auto" Click="Click" Grid.Column="1" Grid.Row="1">
+            <materialDesign:PackIcon x:Name="Mon10Icon" Kind="Close"/>
+        </Button>
+        <Button x:Name="Mon11" Background="Red" HorizontalAlignment="Stretch"   VerticalAlignment="Stretch" Width="auto" Height="auto" Click="Click" Grid.Column="1" Grid.Row="2">
+            <materialDesign:PackIcon x:Name="Mon11Icon" Kind="Close"/>
+        </Button>
+        <Button x:Name="Mon12" Background="Red" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Width="auto" Height="auto" Click="Click" Grid.Column="1" Grid.Row="3">
+            <materialDesign:PackIcon x:Name="Mon12Icon" Kind="Close"/>
+        </Button>
+        <Button x:Name="Mon13" Background="Red" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Width="auto" Height="auto" Click="Click" Grid.Column="1" Grid.Row="4">
+            <materialDesign:PackIcon x:Name="Mon13Icon" Kind="Close"/>
+        </Button>
+        <Button x:Name="Mon14" Background="Red" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Width="auto" Height="auto" Click="Click" Grid.Column="1" Grid.Row="5">
+            <materialDesign:PackIcon x:Name="Mon14Icon" Kind="Close"/>
+        </Button>
+        <Button x:Name="Mon15" Background="Red" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Width="auto" Height="auto" Click="Click" Grid.Column="1" Grid.Row="6">
+            <materialDesign:PackIcon x:Name="Mon15Icon" Kind="Close"/>
+        </Button>
+        <Button x:Name="Tue9"  Background="Red" HorizontalAlignment="Stretch"   VerticalAlignment="Stretch" Width="auto" Height="auto" Click="Click" Grid.Column="2" Grid.Row="0">
+            <materialDesign:PackIcon x:Name="Tue9Icon" Kind="Close"/>
+        </Button>
+        <Button x:Name="Tue10" Background="Red" HorizontalAlignment="Stretch" Width="auto" Height="auto" VerticalAlignment="Stretch" Click="Click" Grid.Column="2" Grid.Row="1">
+            <materialDesign:PackIcon x:Name="Tue10Icon" Kind="Close"/>
+        </Button>
+        <Button x:Name="Tue11" Background="Red" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Width="auto" Height="auto" Click="Click" Grid.Column="2" Grid.Row="2">
+            <materialDesign:PackIcon x:Name="Tue11Icon" Kind="Close"/>
+        </Button>
+        <Button x:Name="Tue12" Background="Red" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="auto" Height="auto" Click="Click" Grid.Column="2" Grid.Row="3">
+            <materialDesign:PackIcon x:Name="Tue12Icon" Kind="Close"/>
+        </Button>
+        <Button x:Name="Tue13" Background="Red" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="auto" Height="auto" Click="Click" Grid.Column="2" Grid.Row="4">
+            <materialDesign:PackIcon x:Name="Tue13Icon" Kind="Close"/>
+        </Button>
+        <Button x:Name="Tue14" Background="Red" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="auto" Height="auto" Click="Click" Grid.Column="2" Grid.Row="5">
+            <materialDesign:PackIcon x:Name="Tue14Icon" Kind="Close"/>
+        </Button>
+        <Button x:Name="Tue15" Background="Red" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="auto" Height="auto" Click="Click" Grid.Column="2" Grid.Row="6">
+            <materialDesign:PackIcon x:Name="Tue15Icon" Kind="Close"/>
+        </Button>
+        <Button x:Name="Wed9"  Background="Red" HorizontalAlignment="Stretch"   VerticalAlignment="Stretch" Width="auto" Height="auto" Click="Click" Grid.Column="3" Grid.Row="0">
+            <materialDesign:PackIcon x:Name="Wed9Icon" Kind="Close"/>
+        </Button>
+        <Button x:Name="Wed10" Background="Red" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Width="auto" Height="auto" Click="Click" Grid.Column="3" Grid.Row="1">
+            <materialDesign:PackIcon x:Name="Wed10Icon" Kind="Close"/>
+        </Button>
+        <Button x:Name="Wed11" Background="Red" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Width="auto" Height="auto" Click="Click" Grid.Column="3" Grid.Row="2">
+            <materialDesign:PackIcon x:Name="Wed11Icon" Kind="Close"/>
+        </Button>
+        <Button x:Name="Wed12" Background="Red" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="auto" Height="auto" Click="Click" Grid.Column="3" Grid.Row="3">
+            <materialDesign:PackIcon x:Name="Wed12Icon" Kind="Close"/>
+        </Button>
+        <Button x:Name="Wed13" Background="Red" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="auto" Height="auto" Click="Click" Grid.Column="3" Grid.Row="4">
+            <materialDesign:PackIcon x:Name="Wed13Icon" Kind="Close"/>
+        </Button>
+        <Button x:Name="Wed14" Background="Red" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="auto" Height="auto" Click="Click" Grid.Column="3" Grid.Row="5">
+            <materialDesign:PackIcon x:Name="Wed14Icon" Kind="Close"/>
+        </Button>
+        <Button x:Name="Wed15" Background="Red" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="auto" Height="auto" Click="Click" Grid.Column="3" Grid.Row="6">
+            <materialDesign:PackIcon x:Name="Wed15Icon" Kind="Close"/>
+        </Button>
+        <Button x:Name="Thu9"  Background="Red" HorizontalAlignment="Stretch"   VerticalAlignment="Stretch" Width="auto" Height="auto" Click="Click" Grid.Column="4" Grid.Row="0">
+            <materialDesign:PackIcon x:Name="Thu9Icon" Kind="Close"/>
+        </Button>
+        <Button x:Name="Thu10" Background="Red" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Width="auto" Height="auto" Click="Click" Grid.Column="4" Grid.Row="1">
+            <materialDesign:PackIcon x:Name="Thu10Icon" Kind="Close"/>
+        </Button>
+        <Button x:Name="Thu11" Background="Red" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Width="auto" Height="auto" Click="Click" Grid.Column="4" Grid.Row="2">
+            <materialDesign:PackIcon x:Name="Thu11Icon" Kind="Close"/>
+        </Button>
+        <Button x:Name="Thu12" Background="Red" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="auto" Height="auto" Click="Click" Grid.Column="4" Grid.Row="3">
+            <materialDesign:PackIcon x:Name="Thu12Icon" Kind="Close"/>
+        </Button>
+        <Button x:Name="Thu13" Background="Red" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="auto" Height="auto" Click="Click" Grid.Column="5" Grid.Row="4">
+            <materialDesign:PackIcon x:Name="Thu13Icon" Kind="Close"/>
+        </Button>
+        <Button x:Name="Thu14" Background="Red" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="auto" Height="auto" Click="Click" Grid.Column="4" Grid.Row="5">
+            <materialDesign:PackIcon x:Name="Thu14Icon" Kind="Close"/>
+        </Button>
+        <Button x:Name="Thu15" Background="Red" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="auto" Height="auto" Click="Click" Grid.Column="4" Grid.Row="6">
+            <materialDesign:PackIcon x:Name="Thu15Icon" Kind="Close"/>
+        </Button>
+    </Grid>
+</UserControl>

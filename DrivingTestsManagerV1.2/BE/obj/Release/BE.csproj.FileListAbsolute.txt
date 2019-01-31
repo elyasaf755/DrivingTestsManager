@@ -1,0 +1,6 @@
+C:\Users\Elyasaf\Documents\Visual Studio 2017 Projects\C#Projects\DrivingTestsManagerV1.2\BE\bin\Release\BE.dll
+C:\Users\Elyasaf\Documents\Visual Studio 2017 Projects\C#Projects\DrivingTestsManagerV1.2\BE\bin\Release\BE.pdb
+C:\Users\Elyasaf\Documents\Visual Studio 2017 Projects\C#Projects\DrivingTestsManagerV1.2\BE\obj\Release\BE.csprojAssemblyReference.cache
+C:\Users\Elyasaf\Documents\Visual Studio 2017 Projects\C#Projects\DrivingTestsManagerV1.2\BE\obj\Release\BE.csproj.CoreCompileInputs.cache
+C:\Users\Elyasaf\Documents\Visual Studio 2017 Projects\C#Projects\DrivingTestsManagerV1.2\BE\obj\Release\BE.dll
+C:\Users\Elyasaf\Documents\Visual Studio 2017 Projects\C#Projects\DrivingTestsManagerV1.2\BE\obj\Release\BE.pdb

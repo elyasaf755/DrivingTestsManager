@@ -1,0 +1,121 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DrivingTestsManagerV1._2.Main_Menu.Test_Menu"
+      xmlns:BE="clr-namespace:BE;assembly=BE"
+      xmlns:controls="http://schemas.microsoft.com/netfx/2009/xaml/presentation"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:User_Controls="clr-namespace:DrivingTestsManagerV1._2.User_Controls" x:Class="DrivingTestsManagerV1._2.Main_Menu.Test_Menu.TestEditPage"
+      mc:Ignorable="d" 
+      d:DesignHeight="540" d:DesignWidth="1020"
+      Title="TestEditPage" x:Name="MyTestEditPage" Loaded="MyTestEditPage_Loaded" >
+
+    <Page.Resources>
+        <CollectionViewSource x:Key="testViewSource" d:DesignSource="{d:DesignInstance {x:Type BE:Test}, CreateList=True}"/>
+    </Page.Resources>
+
+    <Grid Grid.Column="0" DataContext="{Binding ElementName=MyTestEditPage, Path=.}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="800*"/>
+            <ColumnDefinition Width="220*"/>
+        </Grid.ColumnDefinitions>
+
+        <DataGrid x:Name="testDataGrid" IsReadOnly="True" RowDetailsVisibilityMode="VisibleWhenSelected" 
+                  ItemsSource="{Binding TestsCollection}" EnableRowVirtualization="True" AutoGenerateColumns="False" 
+                  SelectionChanged="TestDataGrid_SelectionChanged" Loaded="TestDataGrid_Loaded" ContextMenuOpening="TestDataGrid_ContextMenuOpening" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Sorting="TestDataGrid_Sorting" >
+
+            <DataGrid.GroupStyle>
+                <GroupStyle>
+                    <GroupStyle.HeaderTemplate>
+                        <DataTemplate>
+                            <StackPanel>
+                                <TextBlock Text="{Binding Path=Name}" />
+                            </StackPanel>
+                        </DataTemplate>
+                    </GroupStyle.HeaderTemplate>
+                    <GroupStyle.ContainerStyle>
+                        <Style TargetType="{x:Type GroupItem}">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type GroupItem}">
+                                        <Expander>
+                                            <Expander.Header>
+                                                <StackPanel Orientation="Horizontal">
+                                                    <TextBlock Text="{Binding Path=Name}" Margin="0, 0, 10 , 0"/>
+                                                    <TextBlock Text="{Binding Path=ItemCount}" Margin="0,0,10,0"/>
+                                                    <TextBlock Text="Items"/>
+                                                </StackPanel>
+                                            </Expander.Header>
+                                            <ItemsPresenter />
+                                        </Expander>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </GroupStyle.ContainerStyle>
+                </GroupStyle>
+            </DataGrid.GroupStyle>
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="testIdColumn" Width="SizeToCells" Header="Test's Id" Binding="{Binding TestIdStringFormat}"/>
+                <DataGridTextColumn x:Name="testDateTimeColumn" Width="SizeToHeader" Header="Test's Date" Binding="{Binding TestDateStringFormat}"/>
+                <DataGridTextColumn x:Name="testLocationColumn" Width="SizeToCells" Header="Test's Location" Binding="{Binding TestLocation}"/>
+                <DataGridTextColumn x:Name="traineeIdColumn" Width="SizeToHeader" Header="Trainee's Id" Binding="{Binding TraineeId}"/>
+                <DataGridCheckBoxColumn x:Name="isPassedColumn" Width="SizeToHeader" Header="Is Passed?" Binding="{Binding IsPassed}"/>
+                <DataGridTextColumn x:Name="testerIdColumn" Width="SizeToCells" Header="Tester's Id" Binding="{Binding TesterId}"></DataGridTextColumn>
+            </DataGrid.Columns>
+
+            <!--CONTEXT MENU-->
+            <DataGrid.ContextMenu>
+                <ContextMenu>
+                    <MenuItem x:Name="TesterNotesCmi" Header="Show Tester's Notes" Click="TesterNotesCmi_Click" >
+                        <MenuItem.Icon>
+                            <materialDesign:PackIcon Kind="Show"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <Separator/>
+                    <MenuItem x:Name="AddCmi" Header="Add a New Test">
+                        <MenuItem.Icon>
+                            <materialDesign:PackIcon Kind="Plus"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem x:Name="EditCmi" Header="Set Test's Result" Click="EditCmi_Click" >
+                        <MenuItem.Icon>
+                            <materialDesign:PackIcon Kind="Edit"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </ContextMenu>
+            </DataGrid.ContextMenu>
+
+        </DataGrid>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Column="1">
+            <Grid x:Name="FilterGrid" Grid.Column="1" Background="White" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <Label Content="Filter By:" FontSize="14" FontWeight="Bold" Width="140" Margin="36,0,42,491" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Height="37" VerticalAlignment="Bottom"/>
+                <User_Controls:HinttableTextBox x:Name="testIdFilter" Hint="Test Id" IsValidatorVisible="False" Height="30" Margin="10,0,0,461" TextChanged="TextChanged" HorizontalAlignment="Left" Width="198" VerticalAlignment="Bottom"/>
+                <User_Controls:HinttableTextBox x:Name="traineeIdFilter" Hint="Trainee Id" IsValidatorVisible="False" Height="30" Margin="10,0,0,426" TextChanged="TextChanged" HorizontalAlignment="Left" Width="198" VerticalAlignment="Bottom"/>
+                <User_Controls:HinttableTextBox x:Name="testerIdFilter" Hint="Tester Id" IsValidatorVisible="False" Height="30" Margin="10,0,0,391" TextChanged="TextChanged" HorizontalAlignment="Left" Width="198" VerticalAlignment="Bottom"/>
+                <User_Controls:HinttableTextBox x:Name="dayFilter" Hint="Day" MaxLengeth="2" Height="30" IsValidatorVisible="False" Margin="10,0,0,356" TextChanged="TextChanged" HorizontalAlignment="Left" Width="49" VerticalAlignment="Bottom"/>
+                <Label Content="/" Margin="49,0,0,356" HorizontalAlignment="Left" Width="14" Height="28" VerticalAlignment="Bottom"/>
+                <User_Controls:HinttableTextBox x:Name="monthFilter" Hint="Month" MaxLengeth="2" Height="30" IsValidatorVisible="False" Margin="60,0,0,356" TextChanged="TextChanged" HorizontalAlignment="Left" Width="54" VerticalAlignment="Bottom"/>
+                <Label Content="/" Height="30" Margin="103,0,0,356" HorizontalAlignment="Left" Width="14" VerticalAlignment="Bottom"/>
+                <User_Controls:HinttableTextBox x:Name="yearFilter" Hint="Year" MaxLengeth="4" Height="30" IsValidatorVisible="False" Margin="115,0,0,356" TextChanged="TextChanged" HorizontalAlignment="Left" Width="69" VerticalAlignment="Bottom"/>
+                <User_Controls:HinttableTextBox x:Name="hourFilter" Hint="HH" MaxLengeth="2" Height="30" IsValidatorVisible="False" Margin="10,187,159,321" TextChanged="TextChanged"/>
+                <Label Content=": 00" Margin="49,189,135,321"/>
+                <User_Controls:HinttableComboBox x:Name="cityFilter" Hint="City" Height="auto" IsValidatorVisible="False" Margin="10,222,108,286" SelectionChanged="SelectionChanged" DropDownOpened="CityFilter_DropDownOpened"/>
+                <User_Controls:HinttableComboBox x:Name="streetFilter" Hint="Street" Height="auto" IsValidatorVisible="False" Margin="111,222,10,286" SelectionChanged="SelectionChanged" DropDownOpened="StreetFilter_DropDownOpened"/>
+                <User_Controls:HinttableComboBox x:Name="carTypeFilter" Hint="Car Type" Height="auto" Margin="10,257,118,251" IsValidatorVisible="False" SelectionChanged="SelectionChanged"/>
+                <CheckBox x:Name="isPassedFilter" Content="Is Passed?" IsThreeState="True" IsChecked="{x:Null}" Margin="103,257,10,251" Click="IsPassedFilter_Changed"/>
+                <User_Controls:HinttableComboBox x:Name="drivingSchoolCityFilter" Hint="School City" Height="auto" IsValidatorVisible="False" Margin="10,292,108,216" SelectionChanged="SelectionChanged" DropDownOpened="DrivingSchoolCityFilter_DropDownOpened"/>
+                <User_Controls:HinttableComboBox x:Name="drivingSchoolNameFilter" Hint="School Name" Height="auto" IsValidatorVisible="False" Margin="108,292,10,216" SelectionChanged="SelectionChanged" DropDownOpened="DrivingSchoolNameFilter_DropDownOpened"/>
+                <User_Controls:HinttableComboBox x:Name="DMVFilter" Hint="D.M.V" Height="auto" IsValidatorVisible="False" Margin="10,327,108,181" SelectionChanged="SelectionChanged"/>
+                <CheckBox x:Name="IsGroupingEnabledCheckBox" Content="Enable Groups" Height="30" Margin="10,441,108,67" Checked="IsGroupingEnabledCheckBox_Checked" Unchecked="IsGroupingEnabledCheckBox_Unchecked"/>
+                <Button x:Name="ClearFiltersButton" Content="Clear Filters" Margin="0,498,0,0" Height="Auto" Click="ClearFiltersButton_Click"/>
+            </Grid>
+        </Border>
+
+
+    </Grid>
+</Page>

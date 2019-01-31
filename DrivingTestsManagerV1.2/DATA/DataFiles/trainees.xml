@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Trainees>
+  <Trainee>
+    <Id>308116664</Id>
+    <LastName>Elbaz</LastName>
+    <FirstName>Noya</FirstName>
+    <DateOfBirth>23/12/1991</DateOfBirth>
+    <Gender>Female</Gender>
+    <PhoneNumber>0525503649</PhoneNumber>
+    <Address>באר שבע, משעול פנקס דוד, 24</Address>
+    <EmailAddress>noya4212@gmail.com</EmailAddress>
+    <CarType>Private</CarType>
+    <GearType>Auto</GearType>
+    <DrivingSchool>ירושלים,    אור ירוק, None|None|None|None|None</DrivingSchool>
+    <DrivingTeacher>Moshe</DrivingTeacher>
+    <DrivingLessonsCount>30</DrivingLessonsCount>
+    <ScheduleList>
+      <Schedule>
+        <TestId>1</TestId>
+        <TestDateTime>2019-01-30T09:00:00</TestDateTime>
+      </Schedule>
+    </ScheduleList>
+    <OwnedLisences />
+  </Trainee>
+  <Trainee>
+    <Id>208116665</Id>
+    <LastName>DFD</LastName>
+    <FirstName>MOSHE</FirstName>
+    <DateOfBirth>23/12/1991</DateOfBirth>
+    <Gender>Male</Gender>
+    <PhoneNumber>0525503649</PhoneNumber>
+    <Address>באר שבע, משעול פנקס דוד, 24</Address>
+    <EmailAddress>noya4212@gmail.com</EmailAddress>
+    <CarType>Private</CarType>
+    <GearType>Auto</GearType>
+    <DrivingSchool>ירושלים,  אור ירוק, None|None|None|None|None</DrivingSchool>
+    <DrivingTeacher>Moshe</DrivingTeacher>
+    <DrivingLessonsCount>30</DrivingLessonsCount>
+    <ScheduleList>
+      <Schedule>
+        <TestId>2</TestId>
+        <TestDateTime>2019-01-31T09:00:00</TestDateTime>
+      </Schedule>
+    </ScheduleList>
+    <OwnedLisences />
+  </Trainee>
+</Trainees>

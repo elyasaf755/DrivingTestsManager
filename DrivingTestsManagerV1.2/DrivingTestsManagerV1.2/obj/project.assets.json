@@ -1,0 +1,590 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.6.1": {
+      "Extended.Wpf.Toolkit/3.4.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "PresentationCore",
+          "PresentationFramework",
+          "System",
+          "System.Xaml",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.dll": {},
+          "lib/net40/Xceed.Wpf.DataGrid.dll": {},
+          "lib/net40/Xceed.Wpf.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.dll": {},
+          "lib/net40/Xceed.Wpf.DataGrid.dll": {},
+          "lib/net40/Xceed.Wpf.Toolkit.dll": {}
+        },
+        "resource": {
+          "lib/net40/de/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net40/es/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net40/fr/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net40/hu/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "hu"
+          },
+          "lib/net40/it/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net40/pt-BR/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net40/ro/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "ro"
+          },
+          "lib/net40/ru/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net40/sv/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "sv"
+          },
+          "lib/net40/zh-Hans/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "zh-Hans"
+          }
+        }
+      },
+      "MaterialDesignColors/1.1.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/MaterialDesignColors.dll": {}
+        },
+        "runtime": {
+          "lib/net45/MaterialDesignColors.dll": {}
+        }
+      },
+      "MaterialDesignThemes/2.5.0.1205": {
+        "type": "package",
+        "dependencies": {
+          "MaterialDesignColors": "1.1.0"
+        },
+        "compile": {
+          "lib/net45/MaterialDesignThemes.Wpf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/MaterialDesignThemes.Wpf.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6.1/win": {
+      "Extended.Wpf.Toolkit/3.4.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "PresentationCore",
+          "PresentationFramework",
+          "System",
+          "System.Xaml",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.dll": {},
+          "lib/net40/Xceed.Wpf.DataGrid.dll": {},
+          "lib/net40/Xceed.Wpf.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.dll": {},
+          "lib/net40/Xceed.Wpf.DataGrid.dll": {},
+          "lib/net40/Xceed.Wpf.Toolkit.dll": {}
+        },
+        "resource": {
+          "lib/net40/de/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net40/es/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net40/fr/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net40/hu/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "hu"
+          },
+          "lib/net40/it/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net40/pt-BR/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net40/ro/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "ro"
+          },
+          "lib/net40/ru/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net40/sv/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "sv"
+          },
+          "lib/net40/zh-Hans/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "zh-Hans"
+          }
+        }
+      },
+      "MaterialDesignColors/1.1.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/MaterialDesignColors.dll": {}
+        },
+        "runtime": {
+          "lib/net45/MaterialDesignColors.dll": {}
+        }
+      },
+      "MaterialDesignThemes/2.5.0.1205": {
+        "type": "package",
+        "dependencies": {
+          "MaterialDesignColors": "1.1.0"
+        },
+        "compile": {
+          "lib/net45/MaterialDesignThemes.Wpf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/MaterialDesignThemes.Wpf.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6.1/win-x64": {
+      "Extended.Wpf.Toolkit/3.4.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "PresentationCore",
+          "PresentationFramework",
+          "System",
+          "System.Xaml",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.dll": {},
+          "lib/net40/Xceed.Wpf.DataGrid.dll": {},
+          "lib/net40/Xceed.Wpf.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.dll": {},
+          "lib/net40/Xceed.Wpf.DataGrid.dll": {},
+          "lib/net40/Xceed.Wpf.Toolkit.dll": {}
+        },
+        "resource": {
+          "lib/net40/de/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net40/es/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net40/fr/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net40/hu/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "hu"
+          },
+          "lib/net40/it/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net40/pt-BR/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net40/ro/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "ro"
+          },
+          "lib/net40/ru/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net40/sv/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "sv"
+          },
+          "lib/net40/zh-Hans/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "zh-Hans"
+          }
+        }
+      },
+      "MaterialDesignColors/1.1.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/MaterialDesignColors.dll": {}
+        },
+        "runtime": {
+          "lib/net45/MaterialDesignColors.dll": {}
+        }
+      },
+      "MaterialDesignThemes/2.5.0.1205": {
+        "type": "package",
+        "dependencies": {
+          "MaterialDesignColors": "1.1.0"
+        },
+        "compile": {
+          "lib/net45/MaterialDesignThemes.Wpf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/MaterialDesignThemes.Wpf.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6.1/win-x86": {
+      "Extended.Wpf.Toolkit/3.4.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "PresentationCore",
+          "PresentationFramework",
+          "System",
+          "System.Xaml",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.dll": {},
+          "lib/net40/Xceed.Wpf.DataGrid.dll": {},
+          "lib/net40/Xceed.Wpf.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.dll": {},
+          "lib/net40/Xceed.Wpf.DataGrid.dll": {},
+          "lib/net40/Xceed.Wpf.Toolkit.dll": {}
+        },
+        "resource": {
+          "lib/net40/de/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net40/es/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net40/fr/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net40/hu/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "hu"
+          },
+          "lib/net40/it/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net40/pt-BR/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net40/ro/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "ro"
+          },
+          "lib/net40/ru/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net40/sv/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "sv"
+          },
+          "lib/net40/zh-Hans/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "zh-Hans"
+          }
+        }
+      },
+      "MaterialDesignColors/1.1.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/MaterialDesignColors.dll": {}
+        },
+        "runtime": {
+          "lib/net45/MaterialDesignColors.dll": {}
+        }
+      },
+      "MaterialDesignThemes/2.5.0.1205": {
+        "type": "package",
+        "dependencies": {
+          "MaterialDesignColors": "1.1.0"
+        },
+        "compile": {
+          "lib/net45/MaterialDesignThemes.Wpf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/MaterialDesignThemes.Wpf.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Extended.Wpf.Toolkit/3.4.0": {
+      "sha512": "oKpzgB6BN3Hgq3Of/UCM13OLZc2W2zACXgVff1SvjJnKbJ8xa3xlyCt4SSyQipPRrCJxXcE4tKiWc8qFj5Bg/A==",
+      "type": "package",
+      "path": "extended.wpf.toolkit/3.4.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "extended.wpf.toolkit.3.4.0.nupkg.sha512",
+        "extended.wpf.toolkit.nuspec",
+        "lib/net35/WPFToolkit.dll",
+        "lib/net35/Xceed.Wpf.Toolkit.dll",
+        "lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll",
+        "lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll",
+        "lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll",
+        "lib/net40/Xceed.Wpf.AvalonDock.dll",
+        "lib/net40/Xceed.Wpf.DataGrid.dll",
+        "lib/net40/Xceed.Wpf.Toolkit.dll",
+        "lib/net40/de/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/es/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/fr/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/hu/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/it/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/pt-BR/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/ro/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/ru/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/sv/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/zh-Hans/Xceed.Wpf.AvalonDock.resources.dll",
+        "tools/install.ps1"
+      ]
+    },
+    "MaterialDesignColors/1.1.3": {
+      "sha512": "Z3sn2PnimFwJPfNz+j7yRlzaRT+VnXCg0Mx0tnOYpq/f8rq2U5tZV97ht7757gAuh3S94zViHtdOf8zlbGGrsg==",
+      "type": "package",
+      "path": "materialdesigncolors/1.1.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/MaterialDesignColors.dll",
+        "lib/net45/MaterialDesignColors.pdb",
+        "materialdesigncolors.1.1.3.nupkg.sha512",
+        "materialdesigncolors.nuspec"
+      ]
+    },
+    "MaterialDesignThemes/2.5.0.1205": {
+      "sha512": "vgxABGoeP1x72cbegEzi5vksv915VsPB7t1sjJbZ0Av5NTjaiohLY6GDbyo8IQsqi5Ro85r1wJs8kHU7Kv9yIA==",
+      "type": "package",
+      "path": "materialdesignthemes/2.5.0.1205",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/MaterialDesignThemes.Wpf.XML",
+        "lib/net45/MaterialDesignThemes.Wpf.dll",
+        "lib/net45/MaterialDesignThemes.Wpf.pdb",
+        "materialdesignthemes.2.5.0.1205.nupkg.sha512",
+        "materialdesignthemes.nuspec",
+        "src/net45/Badged.cs",
+        "src/net45/BaseTheme.cs",
+        "src/net45/ButtonProgressAssist.cs",
+        "src/net45/Card.cs",
+        "src/net45/Chip.cs",
+        "src/net45/Clock.cs",
+        "src/net45/ClockChoiceMadeEventArgs.cs",
+        "src/net45/ClockItemButton.cs",
+        "src/net45/ColorZone.cs",
+        "src/net45/ColorZoneAssist.cs",
+        "src/net45/ComboBoxAssist.cs",
+        "src/net45/ComboBoxPopup.cs",
+        "src/net45/Converters/BooleanToVisibilityConverter.cs",
+        "src/net45/Converters/BrushRoundConverter.cs",
+        "src/net45/Converters/BrushToRadialGradientBrushConverter.cs",
+        "src/net45/Converters/CalendarDateCoalesceConverter.cs",
+        "src/net45/Converters/CircularProgressBar/ArcEndPointConverter.cs",
+        "src/net45/Converters/CircularProgressBar/ArcSizeConverter.cs",
+        "src/net45/Converters/CircularProgressBar/LargeArcConverter.cs",
+        "src/net45/Converters/CircularProgressBar/LocalEx.cs",
+        "src/net45/Converters/CircularProgressBar/RotateTransformCentreConverter.cs",
+        "src/net45/Converters/CircularProgressBar/RotateTransformConverter.cs",
+        "src/net45/Converters/CircularProgressBar/StartPointConverter.cs",
+        "src/net45/Converters/ClockItemIsCheckedConverter.cs",
+        "src/net45/Converters/ClockLineConverter.cs",
+        "src/net45/Converters/DrawerOffsetConverter.cs",
+        "src/net45/Converters/EqualityToVisibilityConverter.cs",
+        "src/net45/Converters/HintProxyFabricConverter.cs",
+        "src/net45/Converters/ListViewItemContainerStyleConverter.cs",
+        "src/net45/Converters/MathConverter.cs",
+        "src/net45/Converters/MathMultipleConverter.cs",
+        "src/net45/Converters/NotConverter.cs",
+        "src/net45/Converters/NotZeroConverter.cs",
+        "src/net45/Converters/NotZeroToVisibilityConverter.cs",
+        "src/net45/Converters/NullToVisibilityConverter.cs",
+        "src/net45/Converters/NullableDateTimeToCurrentDateConverter.cs",
+        "src/net45/Converters/PointValueConverter.cs",
+        "src/net45/Converters/RangeLengthConverter.cs",
+        "src/net45/Converters/RangePositionConverterConverter.cs",
+        "src/net45/Converters/ShadowConverter.cs",
+        "src/net45/Converters/ShadowEdgeConverter.cs",
+        "src/net45/Converters/ShadowInfo.cs",
+        "src/net45/Converters/SizeToRectConverter.cs",
+        "src/net45/Converters/SnackbarMessageTypeConverter.cs",
+        "src/net45/Converters/TextFieldHintVisibilityConverter.cs",
+        "src/net45/Converters/TimeToVisibilityConverter.cs",
+        "src/net45/CustomPopupPlacementCallbackHelper.cs",
+        "src/net45/DataGridAssist.cs",
+        "src/net45/DateTimeEx.cs",
+        "src/net45/DialogClosingEventArgs.cs",
+        "src/net45/DialogClosingEventHandler.cs",
+        "src/net45/DialogHost.cs",
+        "src/net45/DialogHostEx.cs",
+        "src/net45/DialogOpenedEventArgs.cs",
+        "src/net45/DialogOpenedEventHandler.cs",
+        "src/net45/DialogSession.cs",
+        "src/net45/DpiHelper.cs",
+        "src/net45/DrawerHost.cs",
+        "src/net45/Extensions.cs",
+        "src/net45/Flipper.cs",
+        "src/net45/HintAssist.cs",
+        "src/net45/HintProxyFabric.ComboBox.cs",
+        "src/net45/HintProxyFabric.PasswordBox.cs",
+        "src/net45/HintProxyFabric.TextBox.cs",
+        "src/net45/HintProxyFabric.cs",
+        "src/net45/IHintProxy.cs",
+        "src/net45/ISnackbarMessageQueue.cs",
+        "src/net45/Icon.cs",
+        "src/net45/IconType.cs",
+        "src/net45/ListBoxAssist.cs",
+        "src/net45/ListSortDirectionIndicator.cs",
+        "src/net45/ListViewAssist.cs",
+        "src/net45/MaterialDataGridComboBoxColumn.cs",
+        "src/net45/MaterialDataGridTextColumn.cs",
+        "src/net45/MaterialDateDisplay.cs",
+        "src/net45/MessageQueueExtension.cs",
+        "src/net45/PackIcon.cs",
+        "src/net45/PackIconDataFactory.cs",
+        "src/net45/PackIconExtension.cs",
+        "src/net45/PackIconKind.cs",
+        "src/net45/Palette.cs",
+        "src/net45/PaletteHelper.cs",
+        "src/net45/Plane3D.cs",
+        "src/net45/PopupBox.cs",
+        "src/net45/Properties/AssemblyInfo.cs",
+        "src/net45/Properties/Resources.Designer.cs",
+        "src/net45/Properties/Settings.Designer.cs",
+        "src/net45/RatingBar.cs",
+        "src/net45/RatingBarButton.cs",
+        "src/net45/Ripple.cs",
+        "src/net45/RippleAssist.cs",
+        "src/net45/ScaleHost.cs",
+        "src/net45/Screen.cs",
+        "src/net45/ScrollViewerAssist.cs",
+        "src/net45/ShadowAssist.cs",
+        "src/net45/SmartHint.cs",
+        "src/net45/Snackbar.cs",
+        "src/net45/SnackbarMessage.cs",
+        "src/net45/SnackbarMessageEventArgs.cs",
+        "src/net45/SnackbarMessageQueue.cs",
+        "src/net45/SnackbarMessageQueueItem.cs",
+        "src/net45/Spelling.cs",
+        "src/net45/StringExtensions.cs",
+        "src/net45/TextFieldAssist.cs",
+        "src/net45/ThemeAssist.cs",
+        "src/net45/TimePicker.cs",
+        "src/net45/ToggleButtonAssist.cs",
+        "src/net45/ToolTipAssist.cs",
+        "src/net45/Transitions/CircleWipe.cs",
+        "src/net45/Transitions/FadeWipe.cs",
+        "src/net45/Transitions/ITransitionEffect.cs",
+        "src/net45/Transitions/ITransitionEffectSubject.cs",
+        "src/net45/Transitions/ITransitionWipe.cs",
+        "src/net45/Transitions/IZIndexController.cs",
+        "src/net45/Transitions/IndexedItemOffsetMultiplierExtension.cs",
+        "src/net45/Transitions/SlideDirection.cs",
+        "src/net45/Transitions/SlideOutWipe.cs",
+        "src/net45/Transitions/SlideWipe.cs",
+        "src/net45/Transitions/TransitionAssist.cs",
+        "src/net45/Transitions/TransitionEffect.cs",
+        "src/net45/Transitions/TransitionEffectBase.cs",
+        "src/net45/Transitions/TransitionEffectExtension.cs",
+        "src/net45/Transitions/TransitionEffectKind.cs",
+        "src/net45/Transitions/TransitionEffectTypeConverter.cs",
+        "src/net45/Transitions/Transitioner.cs",
+        "src/net45/Transitions/TransitionerSlide.cs",
+        "src/net45/Transitions/TransitionerSlideState.cs",
+        "src/net45/Transitions/TransitioningContent.cs",
+        "src/net45/Transitions/TransitioningContentBase.cs",
+        "src/net45/TreeHelper.cs",
+        "src/net45/TreeViewAssist.cs",
+        "src/net45/Underline.cs",
+        "src/net45/ValidationAssist.cs",
+        "src/net45/obj/AppVeyor/GeneratedInternalTypeHelper.g.cs"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.6.1": [
+      "Extended.Wpf.Toolkit >= 3.4.0",
+      "MaterialDesignColors >= 1.1.3",
+      "MaterialDesignThemes >= 2.5.0.1205"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Elyasaf\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Elyasaf\\Documents\\Visual Studio 2017 Projects\\C#Projects\\DrivingTestsManagerV1.2\\DrivingTestsManagerV1.2\\DrivingTestsManagerV1.2.csproj",
+      "projectName": "DrivingTestsManagerV1.2",
+      "projectPath": "C:\\Users\\Elyasaf\\Documents\\Visual Studio 2017 Projects\\C#Projects\\DrivingTestsManagerV1.2\\DrivingTestsManagerV1.2\\DrivingTestsManagerV1.2.csproj",
+      "packagesPath": "C:\\Users\\Elyasaf\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Elyasaf\\Documents\\Visual Studio 2017 Projects\\C#Projects\\DrivingTestsManagerV1.2\\DrivingTestsManagerV1.2\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "configFilePaths": [
+        "C:\\Users\\Elyasaf\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net461"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net461": {
+          "projectReferences": {}
+        }
+      }
+    },
+    "frameworks": {
+      "net461": {
+        "dependencies": {
+          "Extended.Wpf.Toolkit": {
+            "target": "Package",
+            "version": "[3.4.0, )"
+          },
+          "MaterialDesignColors": {
+            "target": "Package",
+            "version": "[1.1.3, )"
+          },
+          "MaterialDesignThemes": {
+            "target": "Package",
+            "version": "[2.5.0.1205, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}

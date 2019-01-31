@@ -1,0 +1,43 @@
+﻿<Page x:Class="DrivingTestsManagerV1._2.Main_Menu.Trainee_Menu.TraineeAddPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DrivingTestsManagerV1._2.Main_Menu.Trainee_Menu"
+      xmlns:User_Controls="clr-namespace:DrivingTestsManagerV1._2.User_Controls"
+      xmlns:wpfTool="http://schemas.xceed.com/wpf/xaml/toolkit"
+      mc:Ignorable="d" 
+      d:DesignHeight="540" d:DesignWidth="1020"
+      Title="TraineeAddPage" Loaded="Page_Loaded" x:Name="MyTraineeAddPage">
+
+    <Grid>
+        <Border BorderBrush="#FF00AEFF" BorderThickness="2">
+            <Grid x:Name="TraineeAddPageMainGrid" Background="White" MouseLeftButtonDown="TraineeAddPageMainGrid_MouseLeftButtonDown">
+                <User_Controls:HinttableTextBox    x:Name="IdTb"        Hint="Id"         HorizontalAlignment="Left" Height="auto" Width="170" Margin="60,50,0,0" VerticalAlignment="Top" TextChanged="IdTb_TextChanged"/>
+                <User_Controls:HinttableTextBox    x:Name="FirstNameTb" Hint="First Name" HorizontalAlignment="Left" Height="auto" Width="170" Margin="300,50,0,0"  VerticalAlignment="Top" TextChanged="FirstNameTb_TextChanged"/>
+                <User_Controls:HinttableTextBox    x:Name="LastNameTb"  Hint="Last Name"  HorizontalAlignment="Left" Height="auto" Width="170" Margin="540,50,0,0" VerticalAlignment="Top" TextChanged="LastNameTb_TextChanged"/>
+                <User_Controls:HinttableDatePicker x:Name="BirthDateDp" Hint="Date Of Birth" HorizontalAlignment="Left" Height="auto" Margin="780,50,0,0" VerticalAlignment="Top" Width="170" SelectedDateChanged="BirthDateDp_SelectedDateChanged"/>
+                <User_Controls:HinttableComboBox   x:Name="GenderCb" Hint="Gender" HorizontalAlignment="Left" Height="auto" Width="170" Margin="60,135,0,0" VerticalAlignment="Top" SelectionChanged="GenderCb_SelectionChanged"/>
+                <User_Controls:HinttableComboBox   x:Name="CityCb" Hint="City" Height="auto" Width="170" Margin="300,135,546,371" SelectionChanged="CityCb_SelectionChanged" PreviewMouseLeftButtonDown="CityCb_PreviewMouseLeftButtonDown"/>
+                <wpfTool:BusyIndicator x:Name="CityBusyIndicator" Height="auto" Width="180" Margin="284,179,552,327"/>
+                <User_Controls:HinttableComboBox x:Name="StreetCb" Hint="Street"  Height="auto" Width="170" Margin="540,135,306,371" IsEnabled="False" SelectionChanged="StreetCb_SelectionChanged" PreviewMouseLeftButtonDown="StreetCb_PreviewMouseLeftButtonDown"/>
+                <wpfTool:BusyIndicator x:Name="StreetBusyIndicator" Height="auto" Width="180" Margin="530,179,306,327"/>
+                <User_Controls:HinttableTextBox x:Name="BuildingTb" Hint="Building"  Height="auto" Width="170" Margin="780,135,66,371" TextChanged="BuildingTb_TextChanged"/>
+                <User_Controls:HinttableTextBox x:Name="PhoneNumberTb" Hint="Phone Number"  HorizontalAlignment="Left" Height="auto" Width="170" Margin="60,216,0,0" VerticalAlignment="Top" TextChanged="PhoneNumberTb_TextChanged"/>
+                <User_Controls:HinttableTextBox x:Name="EmailTb" Hint="Email"  HorizontalAlignment="Left" Height="auto" Width="170" Margin="300,216,0,0" VerticalAlignment="Top" TextChanged="EmailTb_TextChanged"/>
+                <User_Controls:HinttableComboBox x:Name="CarTypeCb" Hint="Car Type" Height="auto" Width="170" Margin="540,216,306,290" SelectionChanged="CarTypeCb_SelectionChanged"/>
+                <User_Controls:HinttableComboBox x:Name="GearTypeCb" Hint="Gear Type" Height="auto" Width="170" Margin="780,216,66,290" SelectionChanged="GearTypeCb_SelectionChanged"/>
+                <User_Controls:HinttableComboBox x:Name="DrivingSchoolsCitiesCb" Hint="Driving School City" Height="auto" Width="170" Margin="60,293,786,213" SelectionChanged="DrivingSchoolsCitiesCb_SelectionChanged"/>
+                <User_Controls:HinttableComboBox x:Name="DrivingSchoolsNamesCb" Hint="Driving School Name" IsEnabled="False" Height="auto" Width="170" Margin="300,293,546,213" SelectionChanged="DrivingSchoolsNamesCb_SelectionChanged"/>
+                <User_Controls:HinttableTextBox  x:Name="DrivingTeacherTb" Hint="Driving Teacher Name" HorizontalAlignment="Left" Height="auto" Width="170" Margin="540,293,0,0"  VerticalAlignment="Top" TextChanged="DrivingTeacherTb_TextChanged"/>
+                <wpfTool:IntegerUpDown x:Name="DrivingLessonsCountNUD" Margin="60,364,816,142" Minimum="0" Maximum="100" HorizontalContentAlignment="Center" Watermark="# of Driving Lessons" ParsingNumberStyle="Integer" ValueChanged="DrivingLessonsCountNUD_ValueChanged"/>
+                <User_Controls:CircleValidator x:Name="LessonsValidator" HorizontalAlignment="Left" Height="30" Margin="200,364,0,0" VerticalAlignment="Top" Width="30" RenderTransformOrigin="8.578,0.644"/>
+                <Button x:Name="SendButton" Background="Green" IsEnabled="False" Content="Add" FontSize="28" Height="Auto" Margin="780,273,66,206" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="SendButton_Click"/>
+                <Button x:Name="FillButton" Height="Auto" IsEnabled="False" Visibility="Visible" Content="Fill" Margin="876,359,40,137" Click="FillButton_Click"/>
+                <Button x:Name="ClearButton" Background="Red" Height="Auto" Content="Clear" Margin="770,426,146,74" Click="ClearButton_Click"/>
+                <Button x:Name="RefillButton" Visibility="Visible" Height="40" Content="Refill" Margin="770,358,145,136" Click="RefillButton_Click" Width="100"/>
+                <ProgressBar x:Name="ProgressBar" Value="{Binding ElementName=MyTraineeAddPage, Path=ValidFieldsCount, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" Height="30" Margin="0,506,0,0" Foreground="Green"/>
+            </Grid>
+        </Border>
+    </Grid>
+</Page>

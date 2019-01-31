@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configurations>
+  <MinimalLessonsCount>20</MinimalLessonsCount>
+  <MaximalTesterAge>0</MaximalTesterAge>
+  <MinimalTesterAge>40</MinimalTesterAge>
+  <MaximalTraineeAge>0</MaximalTraineeAge>
+  <MinimalTraineeAge>17</MinimalTraineeAge>
+  <MinimalDaysBetweenTests>7</MinimalDaysBetweenTests>
+  <TestsCount>2</TestsCount>
+</Configurations>

@@ -1,0 +1,30 @@
+﻿<Window x:Class="DrivingTestsManagerV1._2.SettingsWin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DrivingTestsManagerV1._2"
+        xmlns:user_controls="clr-namespace:DrivingTestsManagerV1._2.User_Controls"
+        mc:Ignorable="d"
+        Title="SettingsWin" x:Name="settingsWin" 
+        Height="450" Width="267"
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid x:Name="configurationsGrid" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="257" Height="419">
+        <Label Content="Trainees' Configurations" FontSize="16" FontWeight="Bold" Margin="0,0,0,389" Height="30" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="257"/>
+        <Label Content="Minimum lessons before test:" FontWeight="SemiBold" Margin="0,0,0,330" Height="29" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="175"/>
+        <user_controls:HinttableTextBox x:Name="minLessonsTb" Hint="" Margin="170,54,0,335" TextChanged="MinLessonsTb_TextChanged" HorizontalAlignment="Left" Width="37"/>
+        <Label Content="Minimal trainee's age:" Margin="0,0,0,300" FontWeight="SemiBold" Height="30" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="130"/>
+        <user_controls:HinttableTextBox x:Name="minTraineeAgeTb" Hint="" Margin="133,83,0,306" TextChanged="MinTraineeAgeTb_TextChanged" HorizontalAlignment="Left" Width="37"/>
+        <Label Content="Maximal trainee's age:" FontWeight="SemiBold" Margin="0,0,0,270" Height="30" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="130"/>
+        <user_controls:HinttableTextBox x:Name="maxTraineeAgeTb" Hint="" Margin="133,0,0,276" TextChanged="MaxTraineeAgeTb_TextChanged" HorizontalAlignment="Left" Width="37" Height="30" VerticalAlignment="Bottom"/>
+        <Label Content="Minimum days metween tests:" FontWeight="SemiBold" Margin="0,0,0,240" HorizontalAlignment="Left" Width="175" Height="30" VerticalAlignment="Bottom"/>
+        <user_controls:HinttableTextBox x:Name="minDaysBetweenTestsTb" Hint="" Margin="175,0,0,249" TextChanged="MinDaysBetweenTestsTb_TextChanged" HorizontalAlignment="Left" Width="37" Height="30" VerticalAlignment="Bottom"/>
+        <Label Content="Testers' Configurations" Height="30" FontSize="16" FontWeight="Bold" Margin="0,0,0,147" HorizontalAlignment="Left" Width="257" VerticalAlignment="Bottom"/>
+        <Label Content="Minimal tester's age:" FontWeight="SemiBold" Margin="0,0,0,112" Height="30" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="120"/>
+        <user_controls:HinttableTextBox x:Name="minTesterAgeTb" Hint="" Margin="120,0,0,120" TextChanged="MinTesterAgeTb_TextChanged" HorizontalAlignment="Left" Width="37" Height="30" VerticalAlignment="Bottom"/>
+        <Label Content="Maximal tester's age:" FontWeight="SemiBold" Margin="0,0,0,82" Height="30" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="125"/>
+        <user_controls:HinttableTextBox x:Name="maxTesterAge" Hint="" Margin="120,0,0,90" TextChanged="MaxTesterAge_TextChanged" HorizontalAlignment="Left" Width="37" Height="30" VerticalAlignment="Bottom"/>
+        <Button x:Name="SendButton" Background="Green" IsEnabled="False" Content="Send" Height="30" Margin="0,354,0,35" Click="Send_Click"/>
+        <Button x:Name="RestoreButton" IsEnabled="true" Content="Restore Default" Height="30" Margin="0,389,0,0" Click="RestoreButton_Click"/>
+    </Grid>
+</Window>
