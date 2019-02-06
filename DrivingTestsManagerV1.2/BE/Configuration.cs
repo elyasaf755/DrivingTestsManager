@@ -17,6 +17,6 @@ namespace BE
         public static int TestsCount { get; set; }
 
         //Set to true for demo and debug only. Will skip certain validations like real id etc..
-        public static bool IsDemoModeEnabled = true;
+        public static bool IsDemoModeEnabled = false;
     }
 }

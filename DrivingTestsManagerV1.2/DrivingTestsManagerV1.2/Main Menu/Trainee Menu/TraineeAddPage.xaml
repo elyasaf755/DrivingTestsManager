@@ -33,7 +33,7 @@
                 <wpfTool:IntegerUpDown x:Name="DrivingLessonsCountNUD" Margin="60,364,816,142" Minimum="0" Maximum="100" HorizontalContentAlignment="Center" Watermark="# of Driving Lessons" ParsingNumberStyle="Integer" ValueChanged="DrivingLessonsCountNUD_ValueChanged"/>
                 <User_Controls:CircleValidator x:Name="LessonsValidator" HorizontalAlignment="Left" Height="30" Margin="200,364,0,0" VerticalAlignment="Top" Width="30" RenderTransformOrigin="8.578,0.644"/>
                 <Button x:Name="SendButton" Background="Green" IsEnabled="False" Content="Add" FontSize="28" Height="Auto" Margin="780,273,66,206" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="SendButton_Click"/>
-                <Button x:Name="FillButton" Height="Auto" IsEnabled="False" Visibility="Visible" Content="Fill" Margin="876,359,40,137" Click="FillButton_Click"/>
+                <Button x:Name="FillButton" Height="Auto" IsEnabled="False" Visibility="Hidden" Content="Fill" Margin="876,359,40,137" Click="FillButton_Click"/>
                 <Button x:Name="ClearButton" Background="Red" Height="Auto" Content="Clear" Margin="770,426,146,74" Click="ClearButton_Click"/>
                 <Button x:Name="RefillButton" Visibility="Visible" Height="40" Content="Refill" Margin="770,358,145,136" Click="RefillButton_Click" Width="100"/>
                 <ProgressBar x:Name="ProgressBar" Value="{Binding ElementName=MyTraineeAddPage, Path=ValidFieldsCount, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" Height="30" Margin="0,506,0,0" Foreground="Green"/>
