@@ -49,7 +49,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>//ZKhgYiux4xKUQ+0nqgKcT7GNpsIJ16yMeLmnUnvnE=</dsig:DigestValue>
+        <dsig:DigestValue>zx7hV+i/XrvnB4PIGsvjhptHSFNUXrL9lXcDQLAjP18=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -61,7 +61,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>zjSpTKDDwe+QLpiFi50xWwJ3S85ze0kDjAT81hwSbQo=</dsig:DigestValue>
+        <dsig:DigestValue>FFNOWVGSZbfmIGWVKbndSkcX9OHbo5thYdbdsomY86g=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -73,7 +73,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>oGtg+9lKEepvcLN7Y8DEUgFLvxF9JRsvryZ8zPhpBcM=</dsig:DigestValue>
+        <dsig:DigestValue>zvp4pgJBaVijlhR+7fY9gKYYXLQADRUH4I4Et1Xj3Yw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -85,19 +85,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>fLfkV6dvAsyI16pu1G+2lvNLkzdJlQQJ4m7fiimRdCI=</dsig:DigestValue>
+        <dsig:DigestValue>QmvExhCmVQapPl3f2swNnRo4e+KqzDk0N/DKtYprboc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DrivingTestsManagerV1.2.exe" size="652784">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DrivingTestsManagerV1.2.exe" size="653296">
       <assemblyIdentity name="DrivingTestsManagerV1.2" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>u0Oi8AqZE9Ldm6TqfvDfyJtxosdDQTiCKEzUPw5lvsE=</dsig:DigestValue>
+        <dsig:DigestValue>0OYoDG6PX7Hhuu5BRKgelAtgrC5PWmRkfg5kUdep1is=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

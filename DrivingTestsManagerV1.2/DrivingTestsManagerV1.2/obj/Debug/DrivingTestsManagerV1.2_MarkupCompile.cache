@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Elyasaf\Documents\Visual Studio 2017 Projects\C#Projects\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\obj\Debug\
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\obj\Debug\
 DrivingTestsManagerV1._2
 none
 false
 DEBUG;TRACE
-C:\Users\Elyasaf\Documents\Visual Studio 2017 Projects\C#Projects\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\App.xaml
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\App.xaml
 20-699412394
 12067159951
-3221429614
-35152140045
+28-2073768785
+35358108006
 Main Menu\Home Menu\LoginWin.xaml;Main Menu\Test Menu\AddTestResultsWin.xaml;Main Menu\Test Menu\AddTestVerificationWin.xaml;Main Menu\Test Menu\PotentialTestersView.xaml;Main Menu\Test Menu\TestEditPage.xaml;Main Menu\Test Menu\TestViewPage.xaml;Main Menu\Tester Menu\TesterAddPage.xaml;Main Menu\Tester Menu\TesterEditPage.xaml;Main Menu\Home Menu\ShowAllTestersPage.xaml;Main Menu\Trainee Menu\TraineeAddPage.xaml;Main Menu\Trainee Menu\TraineeEditPage.xaml;MainWindow.xaml;SettingsWin.xaml;User Controls\CircleValidator.xaml;User Controls\HinttableComboBox.xaml;User Controls\HinttableDatePicker.xaml;User Controls\HinttableTextBox.xaml;User Controls\WorkTimeControl.xaml;User Controls\WorkTimeTable.xaml;User Controls\WorkTimeWindow.xaml;
 
-True
+False
 

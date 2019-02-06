@@ -152,7 +152,6 @@ C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DrivingTestsManage
 C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\bin\Release\EntityFramework.SqlServer.xml
 C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\bin\Release\FontAwesome.WPF.xml
 C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\bin\Release\MaterialDesignThemes.Wpf.pdb
-C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\bin\Release\MaterialDesignThemes.Wpf.xml
 C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\bin\Release\Newtonsoft.Json.pdb
 C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\bin\Release\Newtonsoft.Json.xml
 C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\bin\Release\System.Data.SQLite.xml
@@ -198,3 +197,18 @@ C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DrivingTestsManage
 C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\obj\Release\DrivingTestsManagerV1.2.application
 C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\obj\Release\DrivingTestsManagerV1.2.csproj.CopyComplete
 C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\bin\Release\MaterialDesignColors.pdb
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\bin\Release\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\bin\Release\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\bin\Release\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\bin\Release\Xceed.Wpf.AvalonDock.dll
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\bin\Release\Xceed.Wpf.DataGrid.dll
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\bin\Release\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\bin\Release\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\bin\Release\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\bin\Release\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\bin\Release\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\bin\Release\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\bin\Release\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\bin\Release\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\bin\Release\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Elyasaf\Documents\GitHub\JCT\DrivingTestsManagerV1.2\DrivingTestsManagerV1.2\bin\Release\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll

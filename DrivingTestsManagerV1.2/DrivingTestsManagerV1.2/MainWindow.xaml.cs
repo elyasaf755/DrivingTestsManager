@@ -140,15 +140,15 @@ namespace DrivingTestsManagerV1._2
                         }
                         else if (i == 2)
                         {
-                            CloseAddMenu();
+                            CloseTesterMenu();
                         }
                         else if (i == 3)
                         {
-                            CloseEditMenu();
+                            CloseTraineeMenu();
                         }
                         else if (i == 4)
                         {
-                            CloseDeleteMenu();
+                            CloseTestsMenu();
                         }
                     }
                 }
@@ -210,19 +210,19 @@ namespace DrivingTestsManagerV1._2
         private void ButtonOpenTesterMenu_Click(object sender, RoutedEventArgs e)
         {
             CloseAllLeftOpenMenus(2);
-            OpenAddMenu();
+            OpenTesterMenu();
         }
         private void ButtonCloseAddMenu_Click(object sender, RoutedEventArgs e)
         {
-            CloseAddMenu();
+            CloseTesterMenu();
         }
-        private void OpenAddMenu()
+        private void OpenTesterMenu()
         {
             ButtonOpenTesterMenu.Visibility = Visibility.Collapsed;
             ButtonCloseAddMenu.Visibility = Visibility.Visible;
             isMenuOpenList[2] = true;
         }
-        private void CloseAddMenu()
+        private void CloseTesterMenu()
         {
             ButtonOpenTesterMenu.Visibility = Visibility.Visible;
             ButtonCloseAddMenu.Visibility = Visibility.Collapsed;
@@ -242,19 +242,19 @@ namespace DrivingTestsManagerV1._2
         private void ButtonOpenTraineeMenu_Click(object sender, RoutedEventArgs e)
         {
             CloseAllLeftOpenMenus(3);
-            OpenEditMenu();
+            OpenTraineeMenu();
         }
         private void ButtonCloseTraineeMenu_Click(object sender, RoutedEventArgs e)
         {
-            CloseEditMenu();
+            CloseTraineeMenu();
         }
-        private void OpenEditMenu()
+        private void OpenTraineeMenu()
         {
             ButtonOpenTraineeMenu.Visibility = Visibility.Collapsed;
             ButtonCloseTraineeMenu.Visibility = Visibility.Visible;
             isMenuOpenList[3] = true;
         }
-        private void CloseEditMenu()
+        private void CloseTraineeMenu()
         {
             ButtonOpenTraineeMenu.Visibility = Visibility.Visible;
             ButtonCloseTraineeMenu.Visibility = Visibility.Collapsed;
@@ -274,19 +274,19 @@ namespace DrivingTestsManagerV1._2
         private void ButtonOpenTestMenu_Click(object sender, RoutedEventArgs e)
         {
             CloseAllLeftOpenMenus(4);
-            OpenDeleteMenu();
+            OpenTestsMenu();
         }
         private void ButtonCloseTestMenu_Click(object sender, RoutedEventArgs e)
         {
-            CloseDeleteMenu();
+            CloseTestsMenu();
         }
-        private void OpenDeleteMenu()
+        private void OpenTestsMenu()
         {
             ButtonOpenTestMenu.Visibility = Visibility.Collapsed;
             ButtonCloseTestMenu.Visibility = Visibility.Visible;
             isMenuOpenList[4] = true;
         }
-        private void CloseDeleteMenu()
+        private void CloseTestsMenu()
         {
             ButtonOpenTestMenu.Visibility = Visibility.Visible;
             ButtonCloseTestMenu.Visibility = Visibility.Collapsed;
@@ -301,8 +301,12 @@ namespace DrivingTestsManagerV1._2
         {
             MainFrame.Content = new PotentialTestersView();
         }
+        private void ShowTests_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            MainFrame.Content = new TestEditPage();
+        }
 
-        private void ListViewItem_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        private void ShowAllTestsItem_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             MainFrame.Content = new TestEditPage();
         }
@@ -318,9 +322,5 @@ namespace DrivingTestsManagerV1._2
             MainFrame.Content = new TraineeEditPage();
         }
 
-        private void ShowTests_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
-        {
-            MainFrame.Content = new TestEditPage();
-        }
     }
 }

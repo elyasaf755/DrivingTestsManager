@@ -358,7 +358,7 @@
                     </Grid>
                     <!--Show All Tests-->
                     <ListView ScrollViewer.HorizontalScrollBarVisibility="Disabled" Foreground="#FF0068FF">
-                        <ListViewItem Height="60" Foreground="White" PreviewMouseLeftButtonDown="ListViewItem_PreviewMouseLeftButtonDown" >
+                        <ListViewItem x:Name="ShowAllTestsItem" Height="60" Foreground="White" PreviewMouseLeftButtonDown="ShowAllTestsItem_PreviewMouseLeftButtonDown" >
                             <StackPanel Orientation="Horizontal">
                                 <materialDesign:PackIcon Kind="Show" Margin="10" Width="25" Height="25" VerticalAlignment="Center"/>
                                 <TextBlock Text="Show All Tests" VerticalAlignment="Center" Margin="20 10"/>
